@@ -7,7 +7,7 @@ import { MessageCircle } from 'lucide-react';
 const TelegramButton = () => {
   return (
     <motion.a
-      href="https://t.me/rolf_service_chat"
+      href="https://t.me/Rolf64"
       target="_blank"
       rel="noopener noreferrer"
       initial={{ scale: 0, opacity: 0 }}

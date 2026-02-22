@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { MapPin, Phone, Clock, Mail, MessageCircle } from 'lucide-react';
+import { MapPin, Phone, Clock, MessageCircle } from 'lucide-react';
 
 const Contacts = () => {
   return (
@@ -37,15 +37,7 @@ const Contacts = () => {
                   <Clock size={24} />
                   <span className="text-xs font-black uppercase tracking-widest text-secondary">Время работы</span>
                 </div>
-                <p className="text-gray-600 font-medium">Ежедневно<br />с 09:00 до 20:00</p>
-              </div>
-
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3 text-primary">
-                  <Mail size={24} />
-                  <span className="text-xs font-black uppercase tracking-widest text-secondary">Email</span>
-                </div>
-                <p className="text-gray-600 font-medium">info@rolf-service.ru</p>
+                <p className="text-gray-600 font-medium">Ежедневно<br />с 09:00 до 18:00</p>
               </div>
             </div>
 
@@ -60,7 +52,7 @@ const Contacts = () => {
                 </div>
               </div>
               <a
-                href="https://t.me/rolf_service_chat"
+                href="https://t.me/Rolf64"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-secondary text-white px-8 py-3 rounded-sm font-bold hover:bg-primary hover:text-secondary transition-all"
@@ -73,7 +65,7 @@ const Contacts = () => {
           {/* Map */}
           <div className="h-[500px] w-full bg-muted overflow-hidden rounded-sm grayscale hover:grayscale-0 transition-all duration-700 shadow-xl border border-gray-100">
             <iframe
-              src="https://yandex.ru/map-widget/v1/?ll=46.124564%2C51.468234&z=16&pt=46.124564%2C51.468234,pm2rdm"
+              src="https://yandex.ru/map-widget/v1/?ll=46.156716%2C51.467662&z=16&pt=46.156716%2C51.467662,pm2rdm"
               width="100%"
               height="100%"
               frameBorder="0"
