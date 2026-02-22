@@ -6,12 +6,30 @@ import { Send, CheckCircle } from 'lucide-react';
 
 const BookingForm = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    service: 'Техническое обслуживание (ТО)',
+    comment: ''
+  });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real app, you would send the data to a server
+
+    // Format message for Telegram
+    const message = `🛠 Новая заявка со СТО ROLF:\n\n👤 Имя: ${formData.name}\n📞 Телефон: ${formData.phone}\n🔧 Услуга: ${formData.service}\n💬 Комментарий: ${formData.comment || 'Нет'}`;
+    const encodedMessage = encodeURIComponent(message);
+
+    // Open Telegram
+    window.open(`https://t.me/Rolf64?text=${encodedMessage}`, '_blank');
+
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 5000);
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
   };
 
   return (
@@ -83,6 +101,9 @@ const BookingForm = () => {
                     <label className="text-[10px] uppercase tracking-widest font-black text-gray-400">Ваше имя</label>
                     <input
                       required
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
                       type="text"
                       placeholder="Иван Иванов"
                       className="w-full px-4 py-4 bg-muted border-none focus:ring-2 focus:ring-primary outline-none transition-all rounded-sm text-secondary font-medium"
@@ -92,6 +113,9 @@ const BookingForm = () => {
                     <label className="text-[10px] uppercase tracking-widest font-black text-gray-400">Телефон</label>
                     <input
                       required
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
                       type="tel"
                       placeholder="+7 (___) ___-__-__"
                       className="w-full px-4 py-4 bg-muted border-none focus:ring-2 focus:ring-primary outline-none transition-all rounded-sm text-secondary font-medium"
@@ -101,7 +125,12 @@ const BookingForm = () => {
 
                 <div className="space-y-2">
                   <label className="text-[10px] uppercase tracking-widest font-black text-gray-400">Услуга</label>
-                  <select className="w-full px-4 py-4 bg-muted border-none focus:ring-2 focus:ring-primary outline-none transition-all rounded-sm text-secondary font-medium appearance-none">
+                  <select
+                    name="service"
+                    value={formData.service}
+                    onChange={handleChange}
+                    className="w-full px-4 py-4 bg-muted border-none focus:ring-2 focus:ring-primary outline-none transition-all rounded-sm text-secondary font-medium appearance-none"
+                  >
                     <option>Техническое обслуживание (ТО)</option>
                     <option>Ремонт двигателя</option>
                     <option>Диагностика</option>
@@ -113,6 +142,9 @@ const BookingForm = () => {
                 <div className="space-y-2">
                   <label className="text-[10px] uppercase tracking-widest font-black text-gray-400">Комментарий (опционально)</label>
                   <textarea
+                    name="comment"
+                    value={formData.comment}
+                    onChange={handleChange}
                     placeholder="Марка авто, год выпуска, описание проблемы..."
                     rows={4}
                     className="w-full px-4 py-4 bg-muted border-none focus:ring-2 focus:ring-primary outline-none transition-all rounded-sm text-secondary font-medium resize-none"

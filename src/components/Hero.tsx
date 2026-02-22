@@ -3,7 +3,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
-import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -42,19 +41,19 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-            <Link
+            <a
               href="#booking"
               className="bg-primary hover:bg-white text-secondary px-8 py-4 rounded-sm font-black text-lg transition-all flex items-center justify-center group shadow-lg"
             >
               Записаться сейчас
               <ChevronRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
-            </Link>
-            <Link
+            </a>
+            <a
               href="#services"
               className="border-2 border-white/20 hover:border-primary text-white px-8 py-4 rounded-sm font-bold text-lg transition-all flex items-center justify-center"
             >
               Наши услуги
-            </Link>
+            </a>
           </div>
 
           <div className="mt-16 grid grid-cols-2 md:grid-cols-3 gap-8 border-t border-white/10 pt-10">

@@ -65,7 +65,7 @@ const Contacts = () => {
           {/* Map */}
           <div className="h-[500px] w-full bg-muted overflow-hidden rounded-sm grayscale hover:grayscale-0 transition-all duration-700 shadow-xl border border-gray-100">
             <iframe
-              src="https://yandex.ru/map-widget/v1/?ll=46.156716%2C51.467662&z=16&pt=46.156716%2C51.467662,pm2rdm"
+              src="https://yandex.ru/map-widget/v1/?ll=46.155818%2C51.467792&z=16&pt=46.155818%2C51.467792,pm2rdm"
               width="100%"
               height="100%"
               frameBorder="0"

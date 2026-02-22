@@ -30,9 +30,9 @@ const Header = () => {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center space-x-8">
-          <Link href="#services" className="text-sm font-medium hover:text-primary transition-colors">Услуги</Link>
-          <Link href="#about" className="text-sm font-medium hover:text-primary transition-colors">О компании</Link>
-          <Link href="#contacts" className="text-sm font-medium hover:text-primary transition-colors">Контакты</Link>
+          <a href="#services" className="text-sm font-medium hover:text-primary transition-colors">Услуги</a>
+          <a href="#about" className="text-sm font-medium hover:text-primary transition-colors">О компании</a>
+          <a href="#contacts" className="text-sm font-medium hover:text-primary transition-colors">Контакты</a>
         </nav>
 
         {/* Contact info & CTA */}
@@ -41,12 +41,12 @@ const Header = () => {
             <Phone size={18} className="text-primary fill-primary" />
             <span>+7 (927) 135-88-99</span>
           </a>
-          <Link
+          <a
             href="#booking"
             className="bg-primary hover:bg-primary/90 text-secondary px-6 py-2.5 rounded-sm font-bold text-sm transition-all shadow-md active:scale-95"
           >
             Записаться
-          </Link>
+          </a>
         </div>
 
         {/* Mobile menu button */}
@@ -62,21 +62,21 @@ const Header = () => {
       {isMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-100 p-4 absolute w-full shadow-xl">
           <nav className="flex flex-col space-y-4">
-            <Link href="#services" className="text-lg font-medium border-b border-gray-50 pb-2" onClick={() => setIsMenuOpen(false)}>Услуги</Link>
-            <Link href="#about" className="text-lg font-medium border-b border-gray-50 pb-2" onClick={() => setIsMenuOpen(false)}>О компании</Link>
-            <Link href="#contacts" className="text-lg font-medium border-b border-gray-50 pb-2" onClick={() => setIsMenuOpen(false)}>Контакты</Link>
+            <a href="#services" className="text-lg font-medium border-b border-gray-50 pb-2" onClick={() => setIsMenuOpen(false)}>Услуги</a>
+            <a href="#about" className="text-lg font-medium border-b border-gray-50 pb-2" onClick={() => setIsMenuOpen(false)}>О компании</a>
+            <a href="#contacts" className="text-lg font-medium border-b border-gray-50 pb-2" onClick={() => setIsMenuOpen(false)}>Контакты</a>
             <div className="flex flex-col space-y-4 pt-4">
               <a href="tel:+79271358899" className="flex items-center space-x-3 text-lg font-bold">
                 <Phone size={20} className="text-primary fill-primary" />
                 <span>+7 (927) 135-88-99</span>
               </a>
-              <Link
+              <a
                 href="#booking"
                 className="bg-primary text-secondary text-center py-3 rounded-sm font-bold shadow-md"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Записаться на сервис
-              </Link>
+              </a>
             </div>
           </nav>
         </div>
