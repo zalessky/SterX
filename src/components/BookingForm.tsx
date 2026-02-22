@@ -68,8 +68,8 @@ const BookingForm = () => {
 
             <div className="mt-12 pt-8 border-t border-white/10">
               <p className="text-[10px] text-white/40 uppercase tracking-widest mb-2 font-black">Позвоните нам</p>
-              <a href="tel:+79271358899" className="text-xl font-black text-primary hover:text-white transition-colors">
-                +7 (927) 135-88-99
+              <a href="tel:+74957858000" className="text-xl font-black text-primary hover:text-white transition-colors">
+                +7 (495) 785-80-00
               </a>
             </div>
           </div>

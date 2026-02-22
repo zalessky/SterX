@@ -10,8 +10,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "СТО ROLF Энгельс — Профессиональный автосервис",
-  description: "Официальный партнер ROLF Oil. Качественное техническое обслуживание и ремонт автомобилей в Энгельсе.",
+  title: "СТО ROLF — Профессиональный автосервис",
+  description: "Официальный партнер ROLF Oil. Качественное техническое обслуживание и ремонт автомобилей.",
 };
 
 export default function RootLayout({
@@ -21,6 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru" className="scroll-smooth">
+      <head>
+        <link href="https://fonts.cdnfonts.com/css/museo-sans-cyrl" rel="stylesheet" />
+      </head>
       <body
         className={`${montserrat.variable} antialiased font-sans`}
       >

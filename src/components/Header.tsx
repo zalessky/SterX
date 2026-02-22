@@ -4,43 +4,52 @@ import React from 'react';
 import Link from 'next/link';
 import { Phone, Menu, X } from 'lucide-react';
 import { useState } from 'react';
-import { RServiceLogo } from './BrandingAssets';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white border-b border-gray-200 shadow-sm">
+    <header className="sticky top-0 z-50 w-full bg-black text-white">
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
-        {/* Logo */}
-        <Link href="/" className="flex items-center">
-          <RServiceLogo className="h-10 w-auto" />
+        {/* Logo Left */}
+        <Link href="/" className="flex items-center h-full py-4">
+          <img src="/r-service.webp" alt="R-Service" className="h-full w-auto object-contain" />
         </Link>
 
-        {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center space-x-8">
-          <a href="#services" className="text-sm font-medium hover:text-primary transition-colors">Услуги</a>
-          <a href="#about" className="text-sm font-medium hover:text-primary transition-colors">О компании</a>
-          <a href="#contacts" className="text-sm font-medium hover:text-primary transition-colors">Контакты</a>
-        </nav>
+        {/* Desktop Nav & Contacts */}
+        <div className="hidden lg:flex items-center space-x-8">
+          <nav className="flex items-center space-x-6">
+            <a href="#services" className="text-sm font-medium hover:text-brand-yellow transition-colors uppercase tracking-wider">Услуги</a>
+            <a href="#about" className="text-sm font-medium hover:text-brand-yellow transition-colors uppercase tracking-wider">О компании</a>
+            <a href="#contacts" className="text-sm font-medium hover:text-brand-yellow transition-colors uppercase tracking-wider">Контакты</a>
+          </nav>
 
-        {/* Contact info & CTA */}
-        <div className="hidden md:flex items-center space-x-6">
-          <a href="tel:+79271358899" className="flex items-center space-x-2 text-sm font-museo-900 !italic-none !normal-case tracking-normal">
-            <Phone size={18} className="text-primary fill-primary" />
-            <span>+7 (927) 135-88-99</span>
-          </a>
-          <a
-            href="#booking"
-            className="bg-primary hover:bg-primary/90 text-secondary px-6 py-2.5 rounded-sm font-museo-900 text-sm transition-all shadow-md active:scale-95"
-          >
-            Записаться
-          </a>
+          <div className="h-8 w-px bg-white/20"></div>
+
+          <div className="flex items-center space-x-6">
+            <a href="tel:+79271358899" className="flex items-center space-x-2 text-sm font-bold hover:text-brand-yellow transition-colors">
+              <Phone size={16} className="text-brand-yellow" />
+              <span>+7 (927) 135-88-99</span>
+            </a>
+            <a
+              href="#booking"
+              className="bg-brand-yellow hover:bg-white text-black px-6 py-2 font-bold text-xs uppercase tracking-tighter transition-all"
+            >
+              Записаться
+            </a>
+          </div>
+        </div>
+
+        {/* Logo Right in Yellow Block */}
+        <div className="hidden md:flex h-full items-center">
+            <div className="bg-brand-yellow h-full px-8 flex items-center ml-4">
+                <img src="/logo.svg" alt="ROLF" className="h-6 w-auto object-contain filter invert" style={{ filter: 'brightness(0)' }} />
+            </div>
         </div>
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden p-2 text-secondary"
+          className="lg:hidden p-2 text-white"
           aria-label="Toggle menu"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
@@ -50,19 +59,19 @@ const Header = () => {
 
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 p-4 absolute w-full shadow-xl">
+        <div className="lg:hidden bg-black border-t border-white/10 p-4 absolute w-full shadow-xl">
           <nav className="flex flex-col space-y-4">
-            <a href="#services" className="text-lg font-medium border-b border-gray-50 pb-2" onClick={() => setIsMenuOpen(false)}>Услуги</a>
-            <a href="#about" className="text-lg font-medium border-b border-gray-50 pb-2" onClick={() => setIsMenuOpen(false)}>О компании</a>
-            <a href="#contacts" className="text-lg font-medium border-b border-gray-50 pb-2" onClick={() => setIsMenuOpen(false)}>Контакты</a>
+            <a href="#services" className="text-lg font-medium border-b border-white/10 pb-2" onClick={() => setIsMenuOpen(false)}>Услуги</a>
+            <a href="#about" className="text-lg font-medium border-b border-white/10 pb-2" onClick={() => setIsMenuOpen(false)}>О компании</a>
+            <a href="#contacts" className="text-lg font-medium border-b border-white/10 pb-2" onClick={() => setIsMenuOpen(false)}>Контакты</a>
             <div className="flex flex-col space-y-4 pt-4">
-              <a href="tel:+79271358899" className="flex items-center space-x-3 text-lg font-bold">
-                <Phone size={20} className="text-primary fill-primary" />
+              <a href="tel:+79271358899" className="flex items-center space-x-3 text-lg font-bold text-brand-yellow">
+                <Phone size={20} className="fill-brand-yellow" />
                 <span>+7 (927) 135-88-99</span>
               </a>
               <a
                 href="#booking"
-                className="bg-primary text-secondary text-center py-3 rounded-sm font-bold shadow-md"
+                className="bg-brand-yellow text-black text-center py-3 font-bold uppercase tracking-wider"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Записаться на сервис
