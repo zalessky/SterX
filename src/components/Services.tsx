@@ -3,52 +3,55 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import {
-  Settings,
-  Droplets,
   Activity,
-  Disc,
   Wind,
-  Gauge,
   ArrowUpRight,
   ChevronRight
 } from 'lucide-react';
+import {
+  OilChangeIcon,
+  TireServiceIcon,
+  BrakePadsIcon,
+  RepairWorksIcon,
+  BatteryIcon
+} from './BrandingAssets';
 
 const services = [
   {
     title: 'Техническое обслуживание',
     description: 'Комплексная проверка всех систем автомобиля и замена расходных материалов.',
-    icon: Settings,
+    icon: RepairWorksIcon,
     price: 'от 2 500 ₽',
   },
   {
     title: 'Замена масла',
     description: 'Используем только оригинальные премиальные масла ROLF для долгой жизни вашего двигателя.',
-    icon: Droplets,
+    icon: OilChangeIcon,
     price: 'от 1 500 ₽',
   },
   {
-    title: 'Диагностика двигателя',
-    description: 'Выявление скрытых неисправностей с помощью современного компьютерного оборудования.',
-    icon: Activity,
-    price: 'от 1 000 ₽',
-  },
-  {
-    title: 'Ремонт тормозной системы',
+    title: 'Тормозная система',
     description: 'Замена колодок, дисков и обслуживание суппортов для вашей безопасности.',
-    icon: Disc,
+    icon: BrakePadsIcon,
     price: 'от 2 000 ₽',
   },
   {
-    title: 'Обслуживание кондиционера',
-    description: 'Заправка хладагентом и антибактериальная обработка системы вентиляции.',
-    icon: Wind,
+    title: 'Шиномонтаж',
+    description: 'Профессиональная замена шин, балансировка и проверка давления.',
+    icon: TireServiceIcon,
     price: 'от 1 800 ₽',
   },
   {
-    title: 'Ремонт подвески',
-    description: 'Устранение стуков, замена амортизаторов и сайлентблоков для комфортной езды.',
-    icon: Gauge,
-    price: 'от 3 000 ₽',
+    title: 'Электрооборудование',
+    description: 'Проверка аккумулятора, генератора и ремонт электрических систем.',
+    icon: BatteryIcon,
+    price: 'от 1 200 ₽',
+  },
+  {
+    title: 'Диагностика двигателя',
+    description: 'Выявление скрытых неисправностей с помощью современного оборудования.',
+    icon: Activity,
+    price: 'от 1 000 ₽',
   },
 ];
 
@@ -58,8 +61,8 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 space-y-4 md:space-y-0">
           <div className="max-w-xl">
-            <h2 className="text-sm font-black text-primary uppercase tracking-[0.3em] mb-4">Наши услуги</h2>
-            <p className="text-4xl md:text-5xl font-black text-secondary leading-tight">
+            <h2 className="text-sm font-museo-900 text-primary mb-4">Наши услуги</h2>
+            <p className="text-4xl md:text-5xl font-museo-900 text-secondary leading-tight">
               Профессиональный уход за вашим <span className="text-primary underline decoration-4 underline-offset-8">автомобилем</span>
             </p>
           </div>
@@ -80,16 +83,16 @@ const Services = () => {
             >
               <div className="absolute top-0 left-0 w-1 h-0 bg-primary group-hover:h-full transition-all duration-500"></div>
 
-              <div className="mb-6 inline-flex p-4 bg-white shadow-sm rounded-sm group-hover:scale-110 transition-transform duration-500">
-                <service.icon size={28} className="text-secondary" />
+              <div className="mb-6 inline-flex p-4 bg-white shadow-sm rounded-sm group-hover:scale-110 transition-transform duration-500 w-16 h-16 items-center justify-center">
+                <service.icon strokeWidth={2.5} size={28} className="text-secondary" />
               </div>
 
-              <h3 className="text-xl font-bold text-secondary mb-4 flex items-center">
+              <h3 className="text-xl font-museo-900 text-secondary mb-4 flex items-center !normal-case tracking-normal">
                 {service.title}
                 <ArrowUpRight size={16} className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity" />
               </h3>
 
-              <p className="text-gray-500 text-sm leading-relaxed mb-8">
+              <p className="text-gray-500 text-sm leading-relaxed mb-8 font-museo-300">
                 {service.description}
               </p>
 

@@ -7,6 +7,7 @@ import BookingForm from '@/components/BookingForm';
 import Contacts from '@/components/Contacts';
 import Footer from '@/components/Footer';
 import TelegramButton from '@/components/TelegramButton';
+import BrandingGallery from '@/components/BrandingGallery';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <BrandingShowcase />
       <About />
       <BookingForm />
+      <BrandingGallery />
       <Contacts />
       <Footer />
       <TelegramButton />

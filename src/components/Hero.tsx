@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
+import { RolfLogo } from './BrandingAssets';
 
 const Hero = () => {
   return (
@@ -31,12 +32,16 @@ const Hero = () => {
             <span className="text-primary text-[10px] font-black uppercase tracking-widest">Premium Service</span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-black text-white leading-tight mb-6 tracking-tight">
-            СТО ROLF <br />
-            <span className="text-primary">Энгельс</span>
+          <div className="mb-8">
+             <RolfLogo className="h-24 md:h-32 w-auto filter invert brightness-200" />
+          </div>
+
+          <h1 className="text-5xl md:text-7xl font-museo-900 text-white leading-tight mb-6">
+            ПРОФЕССИОНАЛЬНЫЙ <br />
+            <span className="text-primary">АВТОСЕРВИС</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-white/80 mb-10 leading-relaxed font-light max-w-lg">
+          <p className="text-lg md:text-xl text-white/80 mb-10 leading-relaxed font-museo-300 max-w-lg">
             Профессиональное обслуживание вашего автомобиля с использованием премиальных моторных масел ROLF. Качество, которому доверяют эксперты.
           </p>
 

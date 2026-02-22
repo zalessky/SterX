@@ -21,12 +21,12 @@ const About = () => {
           </div>
 
           <div className="order-1 lg:order-2">
-            <h2 className="text-sm font-black text-primary uppercase tracking-[0.3em] mb-6">О компании</h2>
-            <h3 className="text-4xl md:text-5xl font-black text-secondary leading-tight mb-8">
+            <h2 className="text-sm font-museo-900 text-primary mb-6">О компании</h2>
+            <h3 className="text-4xl md:text-5xl font-museo-900 text-secondary leading-tight mb-8">
               Более <span className="text-primary">20 лет</span> заботимся о вашей безопасности
             </h3>
 
-            <div className="space-y-6 text-gray-500 leading-relaxed font-light">
+            <div className="space-y-6 text-gray-500 leading-relaxed font-museo-300">
               <p>
                 СТО ROLF в Энгельсе — это современный технический центр, специализирующийся на профессиональном обслуживании легковых автомобилей. Мы объединили многолетний опыт наших мастеров с инновационными технологиями смазочных материалов ROLF.
               </p>

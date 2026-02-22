@@ -19,12 +19,12 @@ const BrandingShowcase = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-sm font-black text-primary uppercase tracking-[0.3em] mb-6">Официальный партнер</h2>
-            <h3 className="text-4xl md:text-5xl font-black text-white leading-tight mb-8">
+            <h2 className="text-sm font-museo-900 text-primary mb-6">Официальный партнер</h2>
+            <h3 className="text-4xl md:text-5xl font-museo-900 text-white leading-tight mb-8">
               Энергия <span className="text-primary italic">ROLF</span> для вашего двигателя
             </h3>
 
-            <p className="text-white/70 text-lg mb-10 leading-relaxed font-light">
+            <p className="text-white/70 text-lg mb-10 leading-relaxed font-museo-300">
               Мы используем премиальную линейку масел ROLF, разработанную с применением инновационных технологий. Это гарантирует максимальную защиту двигателя в экстремальных условиях.
             </p>
 

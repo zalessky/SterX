@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Phone, Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { RServiceLogo } from './BrandingAssets';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,20 +13,8 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full bg-white border-b border-gray-200 shadow-sm">
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2">
-          <div className="flex flex-col">
-            <span className="text-2xl font-black tracking-tighter leading-none text-secondary">
-              ROLF
-            </span>
-            <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-secondary/60 leading-none">
-              Service
-            </span>
-          </div>
-          <div className="h-8 w-[2px] bg-primary"></div>
-          <div className="flex flex-col">
-            <span className="text-xs font-bold uppercase tracking-wider">Энгельс</span>
-            <span className="text-[10px] text-gray-500">Автосервис</span>
-          </div>
+        <Link href="/" className="flex items-center">
+          <RServiceLogo className="h-10 w-auto" />
         </Link>
 
         {/* Desktop Nav */}
@@ -37,13 +26,13 @@ const Header = () => {
 
         {/* Contact info & CTA */}
         <div className="hidden md:flex items-center space-x-6">
-          <a href="tel:+79271358899" className="flex items-center space-x-2 text-sm font-bold">
+          <a href="tel:+79271358899" className="flex items-center space-x-2 text-sm font-museo-900 !italic-none !normal-case tracking-normal">
             <Phone size={18} className="text-primary fill-primary" />
             <span>+7 (927) 135-88-99</span>
           </a>
           <a
             href="#booking"
-            className="bg-primary hover:bg-primary/90 text-secondary px-6 py-2.5 rounded-sm font-bold text-sm transition-all shadow-md active:scale-95"
+            className="bg-primary hover:bg-primary/90 text-secondary px-6 py-2.5 rounded-sm font-museo-900 text-sm transition-all shadow-md active:scale-95"
           >
             Записаться
           </a>
@@ -52,6 +41,7 @@ const Header = () => {
         {/* Mobile menu button */}
         <button
           className="md:hidden p-2 text-secondary"
+          aria-label="Toggle menu"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}

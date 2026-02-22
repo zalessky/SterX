@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import { RolfLogo } from './BrandingAssets';
 
 const Footer = () => {
   return (
@@ -10,15 +11,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
           {/* Brand */}
           <div className="space-y-6">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="flex flex-col">
-                <span className="text-3xl font-black tracking-tighter leading-none text-white">
-                  ROLF
-                </span>
-                <span className="text-[11px] font-bold tracking-[0.2em] uppercase text-primary leading-none">
-                  Service
-                </span>
-              </div>
+            <Link href="/" className="flex items-center">
+               <RolfLogo className="h-12 w-auto filter invert brightness-200" />
             </Link>
             <p className="text-white/40 text-sm leading-relaxed font-light">
               Ваш надежный партнер в мире автомобильного сервиса. Качество ROLF — долголетие вашего двигателя.
@@ -76,7 +70,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-[10px] text-white/20 uppercase font-bold tracking-widest">
+        <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-[10px] text-white/20 font-museo-900 !normal-case tracking-widest">
           <p>© 2026 СТО ROLF Энгельс. Все права защищены.</p>
         </div>
       </div>

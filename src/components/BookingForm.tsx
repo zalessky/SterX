@@ -39,8 +39,8 @@ const BookingForm = () => {
           {/* Left Side: Info */}
           <div className="md:w-1/3 bg-secondary p-12 text-white flex flex-col justify-between">
             <div>
-              <h2 className="text-3xl font-black mb-6">Запись на сервис</h2>
-              <p className="text-white/60 text-sm leading-relaxed mb-8">
+              <h2 className="text-3xl font-museo-900 mb-6">Запись на сервис</h2>
+              <p className="text-white/60 text-sm leading-relaxed mb-8 font-museo-300">
                 Оставьте заявку, и наш мастер свяжется с вами в течение 15 минут для уточнения деталей и времени визита.
               </p>
 
@@ -153,7 +153,7 @@ const BookingForm = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-primary hover:bg-secondary hover:text-white text-secondary py-5 rounded-sm font-black text-lg transition-all flex items-center justify-center shadow-lg active:scale-[0.98]"
+                  className="w-full bg-primary hover:bg-secondary hover:text-white text-secondary py-5 rounded-sm font-museo-900 text-lg transition-all flex items-center justify-center shadow-lg active:scale-[0.98]"
                 >
                   Отправить заявку
                   <Send size={18} className="ml-2" />

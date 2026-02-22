@@ -10,8 +10,8 @@ const Contacts = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Info */}
           <div>
-            <h2 className="text-sm font-black text-primary uppercase tracking-[0.3em] mb-6">Контакты</h2>
-            <h3 className="text-4xl md:text-5xl font-black text-secondary leading-tight mb-12">
+            <h2 className="text-sm font-museo-900 text-primary mb-6">Контакты</h2>
+            <h3 className="text-4xl md:text-5xl font-museo-900 text-secondary leading-tight mb-12">
               Ждем вас в <span className="text-primary italic">нашем</span> сервисе
             </h3>
 
