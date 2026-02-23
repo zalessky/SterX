@@ -4,8 +4,6 @@ import React from 'react';
 import Link from 'next/link';
 import { Phone, Menu, X } from 'lucide-react';
 import { useState } from 'react';
-import { RolfLogo, RServiceLogo } from './BrandingAssets';
-
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -14,7 +12,7 @@ const Header = () => {
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         {/* Logo Left */}
         <Link href="/" className="flex items-center h-full py-4">
-          <RServiceLogo className="h-full w-auto" />
+          <img src="/r-service.webp" alt="ROLF Service" className="h-full w-auto object-contain" />
         </Link>
 
         {/* Desktop Nav & Contacts */}
@@ -51,7 +49,7 @@ const Header = () => {
             className="absolute left-full top-0 bottom-0 bg-brand-yellow w-[100vw]"
           ></div>
           <div className="relative z-10 px-8 flex items-center h-full">
-            <RolfLogo variant="dark" className="h-7 w-auto" />
+            <img src="/rolf.webp" alt="ROLF" className="h-8 w-auto object-contain" />
           </div>
         </div>
 

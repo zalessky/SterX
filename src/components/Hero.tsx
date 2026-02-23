@@ -3,8 +3,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
-import { RolfLogo } from './BrandingAssets';
-
 const Hero = () => {
   return (
     <section className="relative h-[85vh] min-h-[600px] w-full flex items-center overflow-hidden bg-secondary">
@@ -33,7 +31,7 @@ const Hero = () => {
           </div>
 
           <div className="mb-8">
-             <RolfLogo className="h-24 md:h-32 w-auto" />
+             <img src="/rolf.webp" alt="ROLF" className="h-24 md:h-32 w-auto object-contain" />
           </div>
 
           <h1 className="text-5xl md:text-7xl font-museo-900 text-white leading-tight mb-6">

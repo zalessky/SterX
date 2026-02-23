@@ -2,8 +2,6 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { RolfLogo } from './BrandingAssets';
-
 const Footer = () => {
   return (
     <footer className="bg-secondary pt-20 pb-10 text-white">
@@ -12,7 +10,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-6">
             <Link href="/" className="flex items-center">
-               <RolfLogo className="h-10 w-auto" variant="light" />
+               <img src="/rolf.webp" alt="ROLF" className="h-10 w-auto object-contain" />
             </Link>
             <p className="text-white/40 text-sm leading-relaxed font-light">
               Ваш надежный партнер в мире автомобильного сервиса в Энгельсе. Качество ROLF — долголетие вашего двигателя.
