@@ -33,7 +33,7 @@ const Hero = () => {
           </div>
 
           <div className="mb-8">
-             <RolfLogo className="h-24 md:h-32 w-auto filter invert brightness-200" />
+             <RolfLogo className="h-24 md:h-32 w-auto" />
           </div>
 
           <h1 className="text-5xl md:text-7xl font-museo-900 text-white leading-tight mb-6">

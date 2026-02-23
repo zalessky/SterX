@@ -4,16 +4,17 @@ import React from 'react';
 import Link from 'next/link';
 import { Phone, Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { RolfLogo, RServiceLogo } from './BrandingAssets';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-black text-white">
+    <header className="sticky top-0 z-50 w-full bg-black text-white overflow-hidden">
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         {/* Logo Left */}
         <Link href="/" className="flex items-center h-full py-4">
-          <img src="/r-service.webp" alt="R-Service" className="h-full w-auto object-contain" />
+          <RServiceLogo className="h-full w-auto" />
         </Link>
 
         {/* Desktop Nav & Contacts */}
@@ -40,11 +41,18 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Logo Right in Yellow Block */}
-        <div className="hidden md:flex h-full items-center">
-            <div className="bg-brand-yellow h-full px-8 flex items-center ml-4">
-                <img src="/logo.svg" alt="ROLF" className="h-6 w-auto object-contain filter invert" style={{ filter: 'brightness(0)' }} />
-            </div>
+        {/* Logo Right in Yellow Block with Slant */}
+        <div className="hidden md:flex h-full items-center relative ml-8">
+          <div
+            className="absolute inset-0 bg-brand-yellow -ml-8"
+            style={{ clipPath: 'polygon(14px 0, 100% 0, 100% 100%, 0 100%)' }}
+          ></div>
+          <div
+            className="absolute left-full top-0 bottom-0 bg-brand-yellow w-[100vw]"
+          ></div>
+          <div className="relative z-10 px-8 flex items-center h-full">
+            <RolfLogo variant="dark" className="h-7 w-auto" />
+          </div>
         </div>
 
         {/* Mobile menu button */}
