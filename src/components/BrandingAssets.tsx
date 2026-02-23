@@ -2,8 +2,9 @@ import React from 'react';
 
 export const RolfLogo = ({ className = "", variant = "light" }: { className?: string, variant?: "light" | "dark" }) => {
   const textColor = variant === "dark" ? "#1D1D1D" : "#FFFFFF";
-  const topFlagColor = variant === "dark" ? "#1D1D1D" : "#FFFFFF";
+  const topFlagColor = "#000000";
   const bottomFlagColor = "#FFCD00";
+  const isLight = variant === "light";
 
   return (
     <svg
@@ -15,9 +16,11 @@ export const RolfLogo = ({ className = "", variant = "light" }: { className?: st
     >
       <g transform="translate(30, 0) skewX(-10)" fillRule="evenodd">
         {/* Flag */}
-        <path d="M 0 0 h 40 v 24 h -40 z" fill={topFlagColor}/>
-        <path d="M 0 38 h 40 v 24 h -40 z" fill="#E3000F"/>
-        <path d="M 0 76 h 40 v 24 h -40 z" fill={bottomFlagColor}/>
+        <g stroke={isLight ? "#FFFFFF" : "#1D1D1D"} strokeWidth="1">
+          <path d="M 0 0 h 40 v 24 h -40 z" fill={topFlagColor}/>
+          <path d="M 0 38 h 40 v 24 h -40 z" fill="#E3000F"/>
+          <path d="M 0 76 h 40 v 24 h -40 z" fill={bottomFlagColor}/>
+        </g>
 
         {/* ROLF */}
         <path d="M 50 0 H 100 C 122 0, 136 12, 136 32 C 136 46, 128 56, 116 60 L 140 100 H 110 L 92 64 H 76 V 100 H 50 Z

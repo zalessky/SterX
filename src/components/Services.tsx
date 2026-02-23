@@ -6,39 +6,36 @@ import {
   Activity,
   Wind,
   ArrowUpRight,
-  ChevronRight
+  ChevronRight,
+  Wrench,
+  Droplets,
+  CircleDashed,
+  Disc
 } from 'lucide-react';
-import {
-  OilChangeIcon,
-  TireServiceIcon,
-  BrakePadsIcon,
-  RepairWorksIcon,
-  BatteryIcon
-} from './BrandingAssets';
 
 const services = [
   {
     title: 'Техническое обслуживание',
     description: 'Комплексная проверка всех систем автомобиля и замена расходных материалов.',
-    icon: RepairWorksIcon,
+    icon: Wrench,
     price: 'от 2 500 ₽',
   },
   {
     title: 'Замена масла',
     description: 'Используем только оригинальные премиальные масла ROLF для долгой жизни вашего двигателя.',
-    icon: OilChangeIcon,
+    icon: Droplets,
     price: 'от 1 500 ₽',
   },
   {
     title: 'Тормозная система',
     description: 'Замена колодок, дисков и обслуживание суппортов для вашей безопасности.',
-    icon: BrakePadsIcon,
+    icon: CircleDashed,
     price: 'от 2 000 ₽',
   },
   {
     title: 'Шиномонтаж',
     description: 'Профессиональная замена шин, балансировка и проверка давления.',
-    icon: TireServiceIcon,
+    icon: Disc,
     price: 'от 1 800 ₽',
   },
   {
