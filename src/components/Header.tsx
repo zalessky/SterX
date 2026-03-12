@@ -40,26 +40,28 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Logo Right in Yellow Block with Slant */}
-          <div className="hidden md:flex h-full relative w-[220px] flex-shrink-0 ml-12">
-            {/* Желтый фон: уменьшили наклон (20px) и убрали нахлест на кнопку */}
-            <div 
-              className="absolute inset-y-0 left-0 bg-brand-yellow z-0" 
-              style={{ 
-                clipPath: 'polygon(20px 0, 100% 0, 100% 100%, 0 100%)',
-                right: '-100vw' 
-              }}
-            ></div>
-            
-            {/* Логотип: теперь он четко позиционирован внутри своего пространства */}
-            <div className="relative z-10 w-full flex justify-start pl-10 pt-[14px]">
-              <img 
-                src="/images/rolf.webp" 
-                alt="ROLF" 
-                className="w-[136px] h-[52px] object-contain" 
-              />
-            </div>
+       {/* Logo Right in Yellow Block with Slant */}
+        <div className="hidden md:flex h-full relative w-[220px] flex-shrink-0 ml-auto">
+          {/* Желтый фон: наклон 15px (идеально по Figma), нахлест -20px для исключения щели */}
+          <div 
+            className="absolute inset-y-0 bg-brand-yellow z-0" 
+            style={{ 
+              left: '-20px', 
+              clipPath: 'polygon(15px 0, 100% 0, 100% 100%, 0 100%)',
+              right: '-100vw' 
+            }}
+          ></div>
+          
+          {/* Логотип: прижат вправо с отступом 100px от края экрана, 14px сверху */}
+          <div className="relative z-10 w-full flex justify-end pr-[100px] pt-[14px]">
+            <img 
+              src="/images/rolf.webp" 
+              alt="ROLF" 
+              className="w-[136px] h-[52px] flex-shrink-0" 
+              style={{ objectFit: 'contain' }}
+            />
           </div>
+        </div>
 
         {/* Mobile menu button */}
         <button
