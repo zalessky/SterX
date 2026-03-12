@@ -41,8 +41,8 @@ const Header = () => {
         </div>
 
        {/* Logo Right in Yellow Block with Slant */}
-        <div className="hidden md:flex h-full relative w-[220px] flex-shrink-0 ml-12">
-          {/* Желтый фон: уменьшили наклон (20px) и убрали нахлест на кнопку */}
+        <div className="hidden md:flex h-full relative w-[170px] flex-shrink-0 ml-12">
+          {/* Желтый фон: уменьшили наклон (15px) и убрали нахлест на кнопку */}
           <div 
             className="absolute inset-y-0 left-0 bg-brand-yellow z-0" 
             style={{ 
@@ -56,7 +56,7 @@ const Header = () => {
             <img 
               src="/images/rolf.webp" 
               alt="ROLF" 
-              className="w-[136px] h-[52px] object-contain" 
+              className="w-[76px] h-[52px] object-contain" 
             />
           </div>
         </div>
