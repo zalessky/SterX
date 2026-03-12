@@ -41,22 +41,28 @@ const Header = () => {
         </div>
 
         {/* Logo Right in Yellow Block with Slant */}
-        <div className="hidden md:flex h-full items-start relative z-20 mr-[100px]">
-          <div
-            className="absolute inset-0 bg-brand-yellow -ml-10 z-0"
-            style={{ clipPath: 'polygon(40px 0, 100% 0, 100% 100%, 0 100%)' }}
-          ></div>
-          <div
-            className="absolute left-full top-0 bottom-0 bg-brand-yellow w-[100vw] z-0"
-          ></div>
-          <div className="relative z-10 flex items-start h-full">
-            <img
-              src="/images/rolf.webp"
-              alt="ROLF"
-              className="w-[136px] h-[52px] mt-[14px] object-contain"
-            />
+          <div className="hidden md:flex h-full items-start relative z-20">
+            {/* Фикс: убрали margin и добавили жесткое позиционирование для фона */}
+            <div
+              className="absolute inset-y-0 bg-brand-yellow z-0"
+              style={{ 
+                left: '-40px', // Нахлест на черный блок
+                right: '0',
+                clipPath: 'polygon(40px 0, 100% 0, 100% 100%, 0 100%)' 
+              }}
+            ></div>
+            {/* Расширитель вправо до края экрана */}
+            <div className="absolute left-full top-0 bottom-0 bg-brand-yellow w-[100vw] z-0"></div>
+            
+            <div className="relative z-10 flex items-start h-full mr-[100px]">
+              <img
+                src="/images/rolf.webp"
+                alt="ROLF"
+                className="w-[136px] h-[52px] mt-[14px] flex-shrink-0"
+                style={{ objectFit: 'contain' }}
+              />
+            </div>
           </div>
-        </div>
 
         {/* Mobile menu button */}
         <button
