@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ROLF Auto Service Landing Page
+
+This is a modern, responsive landing page for ROLF Auto Service, built with Next.js 14, Tailwind CSS 4, and Framer Motion.
+
+## Features
+- Responsive design (Mobile & Desktop)
+- Branding with ROLF Motor Oil
+- Services section
+- Booking form placeholder
+- Yandex Maps integration
+- Telegram contact button
 
 ## Getting Started
 
-First, run the development server:
-
+### Development
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Ubuntu Deployment Instructions / Инструкции по развертыванию на Ubuntu
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+#### English
+1. **Update System:**
+   ```bash
+   sudo apt update && sudo apt upgrade -y
+   ```
+2. **Install Node.js (via NVM recommended):**
+   ```bash
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+   source ~/.bashrc
+   nvm install 20
+   ```
+3. **Clone and Setup:**
+   ```bash
+   git clone <repository-url>
+   cd rolf-landing
+   npm install
+   ```
+4. **Build and Start with PM2:**
+   ```bash
+   npm run build
+   sudo npm install -g pm2
+   pm2 start npm --name "rolf-landing" -- start
+   pm2 save
+   pm2 startup
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+#### Русский
+1. **Обновление системы:**
+   ```bash
+   sudo apt update && sudo apt upgrade -y
+   ```
+2. **Установка Node.js (рекомендуется через NVM):**
+   ```bash
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+   source ~/.bashrc
+   nvm install 20
+   ```
+3. **Клонирование и настройка:**
+   ```bash
+   git clone <repository-url>
+   cd rolf-landing
+   npm install
+   ```
+4. **Сборка и запуск через PM2:**
+   ```bash
+   npm run build
+   sudo npm install -g pm2
+   pm2 start npm --name "rolf-landing" -- start
+   pm2 save
+   pm2 startup
+   ```

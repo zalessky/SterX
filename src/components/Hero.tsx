@@ -84,7 +84,7 @@ const Hero = () => {
         className="absolute bottom-0 right-0 z-20 hidden lg:block w-1/3 p-10 select-none pointer-events-none"
       >
         <img
-          src="https://rolfoil.ru/upload/iblock/f41/40gk87sm6h9pia5930wn422hj4umse0x/322940.png"
+          src="/ultra.webp"
           alt="ROLF Oil"
           className="w-full h-auto drop-shadow-[0_35px_35px_rgba(0,0,0,0.5)] transform -rotate-12"
         />

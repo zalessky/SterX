@@ -1,0 +1,634 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		        <meta name="yandex-verification" content="45f3169e6a63f55c" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/favicons/logo__120.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="/images/favicons/apple-touch-icon.png">  <!-- 180×180 -->
+
+        <title>Ошибка 404: Страница не найдена</title>
+
+        <script data-skip-moving="true">(function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Windows/i.test(ua)){cl += ' bx-win';}else if (/Macintosh/i.test(ua)){cl += " bx-mac";}else if (/Linux/i.test(ua) && !/Android/i.test(ua)){cl += " bx-linux";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Firefox/.test(ua)){cl += " bx-firefox";}ht.className = htc ? htc + " " + cl : cl;})(window, document, navigator);</script>
+
+
+<link href="/local/templates/rolf_2025/src/style/output.css?176656895496100" type="text/css"  data-template-style="true"  rel="stylesheet" >
+<link href="/local/templates/rolf_2025/src/style/animate/animate.min.css?173341811971750" type="text/css"  data-template-style="true"  rel="stylesheet" >
+<link href="/local/templates/rolf_2025/src/style/swiper/swiper-bundle.min.css?173340746118458" type="text/css"  data-template-style="true"  rel="stylesheet" >
+<link href="/local/templates/rolf_2025/css/custom.css?177012262142816" type="text/css"  data-template-style="true"  rel="stylesheet" >
+<link href="/local/templates/rolf_2025/components/bitrix/menu/top_2025/style.css?17652049391645" type="text/css"  data-template-style="true"  rel="stylesheet" >
+
+
+
+
+
+
+
+        <!-- Yandex.Metrika counter -->
+         <noscript><div><img src="https://mc.yandex.ru/watch/33953159" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+
+            </head>
+    <body class="main" itemscope itemtype="http://schema.org/Organization">
+
+
+
+
+    <nav id="menu" class="fixed z-50 m-auto w-full select-none p-[15px] xl:top-10">
+        <div
+            class="flex h-[50px] w-full flex-grow flex-nowrap items-center justify-between border border-white bg-black-600 px-5 py-3.5 sm:m-auto sm:h-[67px] sm:max-w-[1440px] sm:px-9 xl:h-[78px] xl:px-10 xl:py-[18px]"
+    >
+        <a href="/">
+<!--            <img src="--><!--/src/icons/rolf_outlined.svg" alt="logo" class="h-[42px] w-[110px]-->
+<!--            lg:h-[60px] lg:w-[210px]" />-->
+            <img src="/local/templates/rolf_2025/src/icons/rolf_outlined.svg" alt="logo" class="h-[22px] w-[90px] lg:h-[41px] lg:w-[170px]" />
+
+        </a>
+
+        <div class="relative h-full w-[38px] xl:hidden burger__menu active" id="menu-handler">
+            <div
+                    class="absolute top-0 ml-[2px] h-1 w-full -skew-x-[20deg] transform bg-[#1D1D1B] outline outline-1 outline-white transition-all"
+            ></div>
+            <div
+                    class="absolute top-2 ml-[1px] h-1 w-full -skew-x-[20deg] bg-[#CE0E2D] outline outline-1 outline-white transition-all"
+            ></div>
+            <div
+                    class="absolute top-4 h-1 w-full -skew-x-[20deg] bg-[#FFCD00] outline outline-1 outline-white transition-all"
+            ></div>
+        </div>
+        <div id="menu-content" class="absolute left-0 top-0 hidden h-screen w-screen bg-black-600/50 p-[15px] text-white">
+            <div class="relative border border-white bg-black-600">
+                <div
+                        class="flex h-[50px] w-full flex-grow flex-nowrap items-center justify-between px-5 py-3.5 sm:m-auto sm:h-[67px] sm:max-w-[1440px] sm:px-9 xl:h-[78px] xl:px-10 xl:py-[18px]"
+                >
+                    <a href="/">
+                        <img
+                                src="/local/templates/rolf_2025/src/icons/rolf_outlined.svg"
+                                alt="logo"
+                                class="h-[22px] w-[90px] lg:h-[41px] lg:w-[170px]"
+                        /></a>
+
+                    <div class="relative h-full w-[22px] xl:hidden" id="close-menu">
+                        <svg
+                                width="25"
+                                height="22"
+                                viewBox="0 0 25 22"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                    d="M3.34506 0.362599L3.25995 0.27749L3.14034 0.290942L1.92489 0.427646L1.40888 0.485682L1.77605 0.852856L21.733 20.8098L21.8181 20.8949L21.9377 20.8814L23.1531 20.7447L23.6691 20.6867L23.302 20.3195L3.34506 0.362599Z"
+                                    fill="#CE0E2D"
+                                    stroke="white"
+                                    stroke-width="0.5"
+                            />
+                            <path
+                                    d="M21.7331 0.362599L21.8182 0.27749L21.9378 0.290942L23.1532 0.427646L23.6692 0.485682L23.3021 0.852856L3.34517 20.8098L3.26006 20.8949L3.14045 20.8814L1.92499 20.7447L1.40898 20.6867L1.77616 20.3195L21.7331 0.362599Z"
+                                    fill="#CE0E2D"
+                                    stroke="white"
+                                    stroke-width="0.5"
+                            />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="relative max-h-[600px] overflow-y-auto px-[22px] pb-10 pt-[26px] text-base">
+                    <ul class="[&_li]:border-b [&_li]:p-2.5 last:[&_li]:border-none">
+
+                                                            <li class="accordion">
+                                    <div class="flex justify-between hover:text-yellow-600">
+                                        <a href="/catalog/" class=" ">Каталог</a> <span>+</span>
+                                    </div>
+                                    <ul class="accordion-content hidden test123">
+
+
+
+                                        <li class="hover:text-yellow-600">
+                                            <a href="/catalog/engine-oils/" class="">Масла для легковых автомобилей</a>
+                                        </li>
+
+
+                                        <li class="hover:text-yellow-600">
+                                            <a href="/catalog/bigtech-oil/" class="">Масла для грузового транспорта и специальной техники</a>
+                                        </li>
+
+
+                                        <li class="hover:text-yellow-600">
+                                            <a href="/catalog/masla-dlya-sto/" class="">Масла для автосервисов</a>
+                                        </li>
+
+
+                                        <li class="hover:text-yellow-600">
+                                            <a href="/catalog/industrialnye-masla/" class="">Продукция для отраслей промышленности</a>
+                                        </li>
+
+
+                                        <li class="hover:text-yellow-600">
+                                            <a href="/catalog/tormoznye-zhidkosti/" class="">Тормозные жидкости</a>
+                                        </li>
+
+
+                                        <li class="hover:text-yellow-600">
+                                            <a href="/catalog/plastichnye-smazki/" class="">Пластичные смазки</a>
+                                        </li>
+
+
+                                        <li class="hover:text-yellow-600">
+                                            <a href="/catalog/okhlazhdayushchie-zhidkosti/" class="">Охлаждающие жидкости</a>
+                                        </li>
+
+
+                                        <li class="hover:text-yellow-600">
+                                            <a href="/catalog/avtokhimiya-i-avtokosmetika/" class="">Автохимия и Автокосметика</a>
+                                        </li>
+
+
+                                        <li class="hover:text-yellow-600">
+                                            <a href="/catalog/transmissionnye-masla/" class="">Трансмиссионные масла</a>
+                                        </li>
+
+                                                                        </ul>
+                                </li>
+
+                                                            <li class="hover:text-yellow-600">
+                                    <a class=""  href="/approvals/">
+                                        Одобрения и соответствия                                    </a>
+                                </li>
+
+                                                            <li class="accordion">
+                                    <div class="flex justify-between hover:text-yellow-600">
+                                        <a href="/about/" class=" ">О компании</a> <span>+</span>
+                                    </div>
+                                    <ul class="accordion-content hidden test123">
+
+
+
+                                        <li class="hover:text-yellow-600">
+                                            <a href="/articles/" class="">Статьи</a>
+                                        </li>
+
+
+                                        <li class="hover:text-yellow-600">
+                                            <a href="/news/" class="">Новости</a>
+                                        </li>
+
+
+                                        <li class="hover:text-yellow-600">
+                                            <a href="/about/eventsday/" class="">Мероприятия</a>
+                                        </li>
+
+
+                                        <li class="hover:text-yellow-600">
+                                            <a href="/contacts/" class="">Контакты</a>
+                                        </li>
+
+
+                                        <li class="hover:text-yellow-600">
+                                            <a href="/servisnaya-programa/" class="">Сервисная программа</a>
+                                        </li>
+
+
+                                        <li class="hover:text-yellow-600">
+                                            <a href="/vibor-luchshih/" class="">Нас рекомендуют</a>
+                                        </li>
+
+
+                                        <li class="hover:text-yellow-600">
+                                            <a href="/video/" class="">Видео</a>
+                                        </li>
+
+                                                                        </ul>
+                                </li>
+
+                                                            <li class="hover:text-yellow-600">
+                                    <a class=""  href="/where-buy/">
+                                        Где купить?                                    </a>
+                                </li>
+
+                                                            <li class="hover:text-yellow-600">
+                                    <a class=""  href="/ultra/">
+                                        Rolf Ultra                                    </a>
+                                </li>
+
+                        <li class="text-yellow-600 btn__yellow">
+                            <a href="/podbor-online/">Подбор масла</a>
+                        </li>
+                    </ul>
+                </div>
+<!--                </div>-->
+            </div>
+        </div>
+
+
+        <div class="hidden flex-row xl:flex menu__wrapz">
+                                                            <div class="block [&>a]:hover:text-yellow-600 [&>div]:hover:block">
+                        <a  href="/catalog/" class="text-[22px] font-normal text-white
+                        hover:text-yellow-600 " ">
+                            Каталог                        </a>
+
+                                                    <div class="absolute hidden pt-[22px] [&>a]:hover:text-yellow-600">
+                                <div
+                                        class="flex w-fit max-w-[370px] flex-col gap-y-3.5 bg-black-600 px-7
+                                        py-[18px] text-[22px] text-white hover:[&_a]:cursor-pointer hover:[&_a]:text-yellow-600 border border-white"
+                                >
+
+
+                                                                                    <a class="block" href="/catalog/engine-oils/">Масла для легковых автомобилей</a>
+
+
+
+                                                                                    <div class="has_child">
+                                                <a class="block" href="/catalog/bigtech-oil/">Масла для грузового транспорта и специальной техники</a>
+                                                <div class="header-catalog-dropdown__inner absolute border border-white">
+                                                                                                            <a href="/catalog/bigtech-oil/bigtech-motornye-masla/">Моторные масла </a>
+                                                                                                            <a href="/catalog/bigtech-oil/bigtech-gidravlicheskie-masla/">Гидравлические масла </a>
+                                                                                                            <a href="/catalog/bigtech-oil/bigtech-utto-stou-to-4/">Универсальные тракторные масла </a>
+                                                                                                            <a href="/catalog/bigtech-oil/bigtech-transmissionnye-masla/">Трансмиссионные масла </a>
+                                                                                                            <a href="/catalog/bigtech-oil/bigtech-okhlazhdayushchie-zhidkosti/">Охлаждающие жидкости </a>
+                                                                                                            <a href="/catalog/bigtech-oil/bigtech-plastichnye-smazki/">Пластичные смазки </a>
+                                                                                                    </div>
+                                            </div>
+
+
+
+                                                                                    <a class="block" href="/catalog/masla-dlya-sto/">Масла для автосервисов</a>
+
+
+
+                                                                                    <div class="has_child">
+                                                <a class="block" href="/catalog/industrialnye-masla/">Продукция для отраслей промышленности</a>
+                                                <div class="header-catalog-dropdown__inner absolute border border-white">
+                                                                                                            <a href="/catalog/industrialnye-masla/industrial-gidravlicheskie-masla/">Гидравлические масла </a>
+                                                                                                            <a href="/catalog/industrialnye-masla/industrial-okhlazhdayushchie-zhidkosti/">Охлаждающие жидкости </a>
+                                                                                                            <a href="/catalog/industrialnye-masla/industrial-plastichnye-smazki/">Пластичные смазки </a>
+                                                                                                            <a href="/catalog/industrialnye-masla/kompressornye-masla/">Компрессорные масла </a>
+                                                                                                            <a href="/catalog/industrialnye-masla/shpindelnye-masla/">Масло для станков </a>
+                                                                                                            <a href="/catalog/industrialnye-masla/maslo-dlya-statsionarnykh-dvigateley/">Масло для стационарных двигателей </a>
+                                                                                                            <a href="/catalog/industrialnye-masla/reduktornye-masla/">Редукторные масла </a>
+                                                                                                    </div>
+                                            </div>
+
+
+
+                                                                                    <a class="block" href="/catalog/tormoznye-zhidkosti/">Тормозные жидкости</a>
+
+
+
+                                                                                    <a class="block" href="/catalog/plastichnye-smazki/">Пластичные смазки</a>
+
+
+
+                                                                                    <a class="block" href="/catalog/okhlazhdayushchie-zhidkosti/">Охлаждающие жидкости</a>
+
+
+
+
+                                                                                    <a class="block" href="/catalog/transmissionnye-masla/">Трансмиссионные масла</a>
+
+                                                                </div>
+                            </div>
+
+                    </div>
+
+                                                <a class="text-[22px] text-white hover:text-yellow-600" href="/approvals/">
+                        Одобрения и соответствия                    </a>
+
+                                                <div class="block [&>a]:hover:text-yellow-600 [&>div]:hover:block">
+                        <a  href="/about/" class="text-[22px] font-normal text-white
+                        hover:text-yellow-600 " ">
+                            О компании                        </a>
+
+                                                    <div class="absolute hidden pt-[22px] [&>a]:hover:text-yellow-600">
+                                <div
+                                        class="flex w-fit max-w-[370px] flex-col gap-y-3.5 bg-black-600 px-7
+                                        py-[18px] text-[22px] text-white hover:[&_a]:cursor-pointer hover:[&_a]:text-yellow-600 border border-white"
+                                >
+
+
+                                                                                    <a class="block" href="/articles/">Статьи</a>
+
+
+
+                                                                                    <a class="block" href="/news/">Новости</a>
+
+
+
+                                                                                    <a class="block" href="/about/eventsday/">Мероприятия</a>
+
+
+
+                                                                                    <a class="block" href="/contacts/">Контакты</a>
+
+
+
+                                                                                    <a class="block" href="/servisnaya-programa/">Сервисная программа</a>
+
+
+
+                                                                                    <a class="block" href="/vibor-luchshih/">Нас рекомендуют</a>
+
+
+
+                                                                                    <a class="block" href="/video/">Видео</a>
+
+                                                                </div>
+                            </div>
+
+                    </div>
+
+                                                <a class="text-[22px] text-white hover:text-yellow-600" href="/where-buy/">
+                        Где купить?                    </a>
+
+                                                <a class="text-[22px] text-white hover:text-yellow-600" href="/ultra/">
+                        Rolf Ultra                    </a>
+
+
+        </div>
+        <div class="hidden xl:block">
+            <a href="/podbor-online/"
+               class="top_link h-[35px] w-[196px] bg-yellow-600 hover:bg-black-600 hover:text-white hover:border-white
+               text-[22px] font-bold
+               leading-none
+               text-black-600"
+            >
+                ПОДБОР МАСЛА
+            </a>
+        </div>
+    </div>
+    </nav>
+
+        <link rel="stylesheet" href="/front/src/css/global.css">
+<section class="relative overflow-hidden bg-black text-black-600 mt-9">
+    <div class="page-not-found">
+        <div class="container">
+
+            <div class="content__block">
+                <img src="/local/templates/rolf_2025/src/images/404.svg">
+                <h1 class="title-heading">Страница не найдена</h1>
+
+                <a href="/" class="btn__home">На главную</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="footer__flag">
+        <img src="/front/src/img/footer__flag.png" alt="Флаг Германии">
+<div class="footer__img">
+    <img src="/front/src/img/footer-canister-new.png" alt="Канистра синтетического моторного масла ROLF ULTRA S9 0W-30 ACEA A7/B7">
+</div>    </div>
+
+    <div class="container-fluid">
+
+        <div class="d-flex w-100 footer__container justify-content-between" style="text-wrap: balance">
+            <div class="col px-2 footer__item d-none" style="display: none">
+                <div class="footer__title-container">
+                    <img src="/front/src/img/white-arrow.svg" alt="icon" class="footer__title-icon">
+                </div>
+                <div class="footer__item-wrapper">
+
+
+
+                </div>
+            </div>
+            <div class="col  px-2 footer__item">
+                <div class="footer__title-container">
+                    <h3>Каталог</h3>
+                    <img src="/front/src/img/white-arrow.svg" alt="icon" class="footer__title-icon">
+                </div>
+                <div class="footer__item-wrapper">
+
+
+
+		<p><a href="/catalog/engine-oils/" >Масла для легковых автомобилей</a></p>
+
+
+		<p><a href="/catalog/bigtech-oil/" >Масла для грузового транспорта и специальной техники</a></p>
+
+
+		<p><a href="/catalog/masla-dlya-sto/" >Масла для автосервисов</a></p>
+
+
+		<p><a href="/catalog/industrialnye-masla/" >Продукция для отраслей промышленности</a></p>
+
+
+		<p><a href="/catalog/tormoznye-zhidkosti/" >Тормозные жидкости</a></p>
+
+
+		<p><a href="/catalog/plastichnye-smazki/" >Пластичные смазки</a></p>
+
+
+		<p><a href="/catalog/okhlazhdayushchie-zhidkosti/" >Охлаждающие жидкости</a></p>
+
+
+		<p><a href="/catalog/avtokhimiya-i-avtokosmetika/" >Автохимия и Автокосметика</a></p>
+
+
+		<p><a href="/catalog/transmissionnye-masla/" >Трансмиссионные масла</a></p>
+
+
+                    <p><a href="/antifreeze/">Антифризы</a></p>
+                    <p><a href="/podbor-online/">Подбор масла</a></p>
+                </div>
+
+            </div>
+            <div class="col px-2 footer__item">
+                <div class="footer__title-container">
+                    <h3 itemprop="name">ROLF</h3>
+                    <img src="/front/src/img/white-arrow.svg" alt="icon" class="footer__title-icon">
+                </div>
+                <div class="footer__item-wrapper">
+
+
+
+		<p><a href="/about/" >История бренда</a></p>
+
+
+		<p><a href="/where-buy/" >Где купить?</a></p>
+
+
+		<p><a href="/our-technology/" >Наши технологии</a></p>
+
+
+		<p><a href="/articles/" >Статьи</a></p>
+
+
+		<p><a href="/yuridicheskim-litsam/" >Юридическим лицам</a></p>
+
+
+		<p><a href="/about/eventsday/" >Мероприятия</a></p>
+
+
+		<p><a href="/cooperation/" >Сотрудничество</a></p>
+
+
+		<p><a href="/servisnaya-programa/" >Сервисная программа</a></p>
+
+
+		<p><a href="/approvals/" >Одобрения и соответствия</a></p>
+
+
+		<p><a href="/vibor-luchshih/" >Нас рекомендуют</a></p>
+
+
+		<p><a href="/rolf-ultra-zero_2025/" >Мифы о нулевках</a></p>
+
+
+		<p><a href="/techinfo/" >Техническая поддержка</a></p>
+
+
+                </div>
+            </div>
+            <div class="col px-2 footer__item last">
+                <a href="tel:+78003008200">
+<h3 itemprop="telephone">8 (800) 300-82-00</h3>
+ </a>
+<p>
+	<a href="tel:+78003008200"> Круглосуточный бесплатный звонок по России</a>
+</p>
+<p>
+	<a class="footer__item--email" href="mailto:shop@rolfoil.ru" itemprop="email">shop@rolfoil.ru</a>
+</p>
+<p>
+	<a target="_blank" href="/soglashenie-o-konfidentsialnosti/">Соглашение о конфиденциальности</a>
+</p>
+<!--
+<p>
+	<a target="_blank" href="/polzovatelskoe-soglashenie/">Пользовательское соглашение</a>
+</p> -->
+
+<p>
+	Рекламодатель ROLF Lubricants Vostok
+</p>                <div class="socicons">
+                    <a rel="nofollow" target="_blank" href="https://vk.com/rolf_rus"><img class="socicon" src="/i/svg/vk_icon.svg" /></a>
+                    <a rel="nofollow" target="_blank" href="https://dzen.ru/rolfoil"><img class="socicon" src="/i/svg/zen_icon.svg" /></a>
+                    <a rel="nofollow" target="_blank" href="https://www.youtube.com/@rolf-oil"><img class="socicon" src="/i/svg/youtube_icon.svg" /></a>
+                    <a rel="nofollow" target="_blank" href="https://t.me/rolf_oil"><img class="socicon" src="/i/svg/telegram-logo.svg" /></a>
+                    <a rel="nofollow" target="_blank" href="https://www.drive2.ru/o/rolfoil#blog"><img class="socicon" src="/i/svg/drive2-logo.svg" /></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<script>
+        // document.addEventListener("DOMContentLoaded", function() {
+        //     let formLubribase = document.getElementsByClassName('form_lubribase');
+        //     formLubribase[0].classList.remove('d-none');
+        //
+        //     let oldForm = document.getElementsByClassName('new_podbor');
+        //     oldForm[0].classList.add('d-none');
+        // });
+    </script><script>if(!window.BX)window.BX={};if(!window.BX.message)window.BX.message=function(mess){if(typeof mess==='object'){for(let i in mess) {BX.message[i]=mess[i];} return true;}};</script>
+<script>(window.BX||top.BX).message({"JS_CORE_LOADING":"Загрузка...","JS_CORE_NO_DATA":"- Нет данных -","JS_CORE_WINDOW_CLOSE":"Закрыть","JS_CORE_WINDOW_EXPAND":"Развернуть","JS_CORE_WINDOW_NARROW":"Свернуть в окно","JS_CORE_WINDOW_SAVE":"Сохранить","JS_CORE_WINDOW_CANCEL":"Отменить","JS_CORE_WINDOW_CONTINUE":"Продолжить","JS_CORE_H":"ч","JS_CORE_M":"м","JS_CORE_S":"с","JSADM_AI_HIDE_EXTRA":"Скрыть лишние","JSADM_AI_ALL_NOTIF":"Показать все","JSADM_AUTH_REQ":"Требуется авторизация!","JS_CORE_WINDOW_AUTH":"Войти","JS_CORE_IMAGE_FULL":"Полный размер"});</script><script src="/bitrix/js/main/core/core.js?1759761125511455"></script><script>BX.Runtime.registerExtension({"name":"main.core","namespace":"BX","loaded":true});</script>
+<script>BX.setJSList(["\/bitrix\/js\/main\/core\/core_ajax.js","\/bitrix\/js\/main\/core\/core_promise.js","\/bitrix\/js\/main\/polyfill\/promise\/js\/promise.js","\/bitrix\/js\/main\/loadext\/loadext.js","\/bitrix\/js\/main\/loadext\/extension.js","\/bitrix\/js\/main\/polyfill\/promise\/js\/promise.js","\/bitrix\/js\/main\/polyfill\/find\/js\/find.js","\/bitrix\/js\/main\/polyfill\/includes\/js\/includes.js","\/bitrix\/js\/main\/polyfill\/matches\/js\/matches.js","\/bitrix\/js\/ui\/polyfill\/closest\/js\/closest.js","\/bitrix\/js\/main\/polyfill\/fill\/main.polyfill.fill.js","\/bitrix\/js\/main\/polyfill\/find\/js\/find.js","\/bitrix\/js\/main\/polyfill\/matches\/js\/matches.js","\/bitrix\/js\/main\/polyfill\/core\/dist\/polyfill.bundle.js","\/bitrix\/js\/main\/core\/core.js","\/bitrix\/js\/main\/polyfill\/intersectionobserver\/js\/intersectionobserver.js","\/bitrix\/js\/main\/lazyload\/dist\/lazyload.bundle.js","\/bitrix\/js\/main\/polyfill\/core\/dist\/polyfill.bundle.js","\/bitrix\/js\/main\/parambag\/dist\/parambag.bundle.js"]);
+</script>
+<script>BX.Runtime.registerExtension({"name":"pull.protobuf","namespace":"BX","loaded":true});</script>
+<script>BX.Runtime.registerExtension({"name":"rest.client","namespace":"window","loaded":true});</script>
+<script>(window.BX||top.BX).message({"pull_server_enabled":"N","pull_config_timestamp":0,"shared_worker_allowed":"Y","pull_guest_mode":"N","pull_guest_user_id":0,"pull_worker_mtime":1759760952});(window.BX||top.BX).message({"PULL_OLD_REVISION":"Для продолжения корректной работы с сайтом необходимо перезагрузить страницу."});</script>
+<script>BX.Runtime.registerExtension({"name":"pull.client","namespace":"BX","loaded":true});</script>
+<script>BX.Runtime.registerExtension({"name":"pull","namespace":"window","loaded":true});</script>
+<script>BX.Runtime.registerExtension({"name":"jquery3","namespace":"window","loaded":true});</script>
+<script>(window.BX||top.BX).message({"LANGUAGE_ID":"ru","FORMAT_DATE":"DD.MM.YYYY","FORMAT_DATETIME":"DD.MM.YYYY HH:MI:SS","COOKIE_PREFIX":"BITRIX_SM","SERVER_TZ_OFFSET":"10800","UTF_MODE":"Y","SITE_ID":"s1","SITE_DIR":"\/","USER_ID":"","SERVER_TIME":1773317163,"USER_TZ_OFFSET":0,"USER_TZ_AUTO":"Y","bitrix_sessid":"ce861e1f6e3e78d7758f6f7c45c6c473"});</script><script src="/bitrix/js/pull/protobuf/protobuf.js?1742309463274055"></script>
+<script src="/bitrix/js/pull/protobuf/model.js?174230946370928"></script>
+<script src="/bitrix/js/rest/client/rest.client.js?174230946517414"></script>
+<script src="/bitrix/js/pull/client/pull.client.js?175976095383861"></script>
+<script src="/bitrix/js/main/jquery/jquery-3.6.0.min.js?174230946189501"></script>
+<script>
+					(function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+				</script>
+
+
+
+<script src="/local/templates/rolf_2025/src/scripts/swiper/swiper-bundle.min.js?1733407469151700"></script>
+<script src="/local/templates/rolf_2025/js/main.js?176851360517459"></script>
+<script src="/local/templates/rolf_2025/js/custom.js?177012251016086"></script>
+<script src="/local/templates/rolf_2025/components/bitrix/menu/top_2025/script.js?1750712279443"></script>
+
+
+<script type="text/javascript">
+            (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter33953159 = new Ya.Metrika({ id:33953159, clickmap:true, trackLinks:true, accurateTrackBounce:true, ecommerce:"dataLayer" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], x = "https://mc.yandex.ru/metrika/watch.js", s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; for (var i = 0; i < document.scripts.length; i++) { if (document.scripts[i].src === x) { return; } } s.type = "text/javascript"; s.async = true; s.src = x; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
+        </script><script>
+    // const menuHandler = document.querySelector("#menu-handler");
+    // const menuContent = document.querySelector("#menu-content");
+    // const closeMenu = document.querySelector("#close-menu");
+    //
+    // menuHandler.addEventListener("click", () => {
+    //     menuContent.classList.toggle("hidden");
+    // });
+    //
+    // closeMenu.addEventListener("click", () => {
+    //     menuContent.classList.toggle("hidden");
+    // });
+    //
+    // const accordions = document.querySelectorAll(".accordion");
+    //
+    // accordions.forEach((item) => {
+    //     const content = item.querySelector(".accordion-content");
+    //
+    //     item.addEventListener("click", () => {
+    //         content.classList.toggle("hidden");
+    //     });
+    // });
+</script>
+<script>var safeCategories = ["engine-oils","masla-dlya-sto","plastichnye-smazki","okhlazhdayushchie-zhidkosti","transmissionnye-masla","tormoznye-zhidkosti","other","avtokhimiya-i-avtokosmetika","bigtech-motornye-masla","industrial-motornye-masla"];</script>
+<script>
+    // фикс пеновского дизайна для мобайла на подборщик продуктов
+    $('.bx-touch .filter-form__title').addClass('text-center');
+    $('.bx-touch .filter-form__title h3').addClass('btn btn-lg m-auto');
+    $('.bx-touch .filter-form__wrapper').addClass('show');
+
+    // фикс пустых категорий, оставляем только те, что есть в safeCategories
+    var safeLinks = document.querySelectorAll('.footer__item-wrapper a[href*="/catalog/"]');
+    safeLinks.forEach(function(link) {
+        var href = link.getAttribute('href');
+        if (!safeCategories.some(category => href.includes(category))) {
+            link.parentNode.classList.add('d-none', 'empty_no_products');
+        }
+    });
+</script>
+
+</body>
+
+</html>

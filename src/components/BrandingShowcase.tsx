@@ -44,7 +44,7 @@ const BrandingShowcase = () => {
 
             <div className="flex items-center space-x-4 p-6 bg-white/5 border border-white/10 rounded-sm">
               <img
-                src="https://rolfoil.ru/local/templates/rolf_2025/src/icons/rolf_outlined.svg"
+                src="/rolf_outlined.svg"
                 alt="ROLF Logo"
                 className="h-10 opacity-80"
               />
@@ -64,7 +64,7 @@ const BrandingShowcase = () => {
           >
             <div className="absolute inset-0 bg-primary opacity-20 blur-[100px] rounded-full"></div>
             <img
-              src="https://rolfoil.ru/upload/iblock/c6e/j0oe6awrtx0vbfhjw7t8d0galoyw41kt/323105.png"
+              src="/323105.png"
               alt="ROLF GT 5W-30"
               className="relative z-10 w-full max-w-md mx-auto drop-shadow-[0_50px_50px_rgba(0,0,0,0.8)]"
             />
