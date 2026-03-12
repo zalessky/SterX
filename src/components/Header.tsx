@@ -13,7 +13,7 @@ const Header = () => {
       <div className="container mx-auto px-4 h-20 flex items-center justify-between relative">
         {/* Logo Left */}
         <Link href="/" className="flex items-center h-full py-4">
-          <img src="/r-service.webp" alt="ROLF Service" className="h-full w-auto object-contain" />
+          <img src="/images/r-service.webp" alt="ROLF Service" className="h-full w-auto object-contain" />
         </Link>
 
         {/* Desktop Nav & Contacts */}
@@ -41,17 +41,17 @@ const Header = () => {
         </div>
 
         {/* Logo Right in Yellow Block with Slant */}
-        <div className="hidden md:flex h-full items-center relative z-20 mr-[100px]">
+        <div className="hidden md:flex h-full items-start relative z-20 mr-[100px]">
           <div
-            className="absolute inset-0 bg-brand-yellow -ml-8 z-0"
-            style={{ clipPath: 'polygon(14px 0, 100% 0, 100% 100%, 0 100%)' }}
+            className="absolute inset-0 bg-brand-yellow -ml-10 z-0"
+            style={{ clipPath: 'polygon(40px 0, 100% 0, 100% 100%, 0 100%)' }}
           ></div>
           <div
             className="absolute left-full top-0 bottom-0 bg-brand-yellow w-[100vw] z-0"
           ></div>
-          <div className="relative z-10 flex items-center h-full">
+          <div className="relative z-10 flex items-start h-full">
             <img
-              src="/rolf.webp"
+              src="/images/rolf.webp"
               alt="ROLF"
               className="w-[136px] h-[52px] mt-[14px] object-contain"
             />

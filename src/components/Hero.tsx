@@ -33,7 +33,7 @@ const Hero = () => {
 
           <div className="mt-[110px] ml-[0.4px] mb-8">
              <img
-               src="/rolf.webp"
+               src="/images/rolf.webp"
                alt="ROLF"
                className="w-[336.2px] h-[128px] object-contain"
              />
@@ -89,7 +89,7 @@ const Hero = () => {
         className="absolute bottom-0 right-0 z-20 hidden lg:block w-1/3 p-10 select-none pointer-events-none"
       >
         <img
-          src="/ultra.webp"
+          src="/images/ultra.webp"
           alt="ROLF Oil"
           className="w-full h-auto drop-shadow-[0_35px_35px_rgba(0,0,0,0.5)] transform -rotate-12"
         />

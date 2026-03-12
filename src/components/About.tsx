@@ -10,9 +10,9 @@ const About = () => {
           <div className="order-2 lg:order-1 relative">
             <div className="absolute -top-10 -left-10 w-40 h-40 bg-primary opacity-20 -z-10 rounded-sm"></div>
             <img
-              src="https://images.unsplash.com/photo-1517524206127-48bbd363f3d7?q=80&w=1000&auto=format&fit=crop"
-              alt="Our Workshop"
-              className="rounded-sm shadow-2xl relative z-10"
+              src="/images/scheme.webp"
+              alt="Workshop Scheme"
+              className="rounded-sm shadow-2xl relative z-10 w-full"
             />
             <div className="absolute -bottom-10 -right-10 bg-secondary p-8 text-white z-20 rounded-sm shadow-xl hidden sm:block">
               <p className="text-primary text-4xl font-black mb-1">100%</p>

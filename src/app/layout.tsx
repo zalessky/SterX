@@ -13,7 +13,12 @@ export const metadata: Metadata = {
   title: "СТО ROLF — Профессиональный автосервис",
   description: "Официальный партнер ROLF Oil. Качественное техническое обслуживание и ремонт автомобилей.",
   icons: {
-    icon: '/favicon.ico',
+    icon: [
+      { url: '/images/favicons/favicon.png', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/images/favicons/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
   },
 };
 
@@ -26,7 +31,6 @@ export default function RootLayout({
     <html lang="ru" className="scroll-smooth">
       <head>
         <link href="https://fonts.cdnfonts.com/css/museo-sans-cyrl" rel="stylesheet" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body
         className={`${montserrat.variable} antialiased font-sans`}

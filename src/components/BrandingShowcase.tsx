@@ -44,9 +44,9 @@ const BrandingShowcase = () => {
 
             <div className="flex items-center space-x-4 p-6 bg-white/5 border border-white/10 rounded-sm">
               <img
-                src="/rolf_outlined.svg"
+                src="/images/rolf.webp"
                 alt="ROLF Logo"
-                className="h-10 opacity-80"
+                className="h-10 opacity-80 object-contain"
               />
               <div className="h-10 w-[1px] bg-white/20"></div>
               <p className="text-xs text-white/50 uppercase tracking-widest leading-snug">
@@ -64,8 +64,8 @@ const BrandingShowcase = () => {
           >
             <div className="absolute inset-0 bg-primary opacity-20 blur-[100px] rounded-full"></div>
             <img
-              src="/323105.png"
-              alt="ROLF GT 5W-30"
+              src="/images/322940.png"
+              alt="ROLF Canister"
               className="relative z-10 w-full max-w-md mx-auto drop-shadow-[0_50px_50px_rgba(0,0,0,0.8)]"
             />
 
@@ -84,7 +84,7 @@ const BrandingShowcase = () => {
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
               className="absolute bottom-1/4 -right-10 z-20 bg-primary p-4 shadow-2xl rounded-sm hidden md:block"
             >
-              <div className="text-secondary font-black text-2xl">5W-30</div>
+              <div className="text-secondary font-black text-2xl">5W-40</div>
               <div className="text-secondary/60 text-[10px] uppercase font-bold tracking-tighter">Viscosity</div>
             </motion.div>
           </motion.div>
