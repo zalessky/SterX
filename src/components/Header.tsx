@@ -4,12 +4,13 @@ import React from 'react';
 import Link from 'next/link';
 import { Phone, Menu, X } from 'lucide-react';
 import { useState } from 'react';
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 w-full bg-black text-white overflow-hidden">
-      <div className="container mx-auto px-4 h-20 flex items-center justify-between">
+      <div className="container mx-auto px-4 h-20 flex items-center justify-between relative">
         {/* Logo Left */}
         <Link href="/" className="flex items-center h-full py-4">
           <img src="/r-service.webp" alt="ROLF Service" className="h-full w-auto object-contain" />
@@ -40,16 +41,20 @@ const Header = () => {
         </div>
 
         {/* Logo Right in Yellow Block with Slant */}
-        <div className="hidden md:flex h-full items-center relative ml-8">
+        <div className="hidden md:flex h-full items-center relative z-20 mr-[100px]">
           <div
-            className="absolute inset-0 bg-brand-yellow -ml-8"
+            className="absolute inset-0 bg-brand-yellow -ml-8 z-0"
             style={{ clipPath: 'polygon(14px 0, 100% 0, 100% 100%, 0 100%)' }}
           ></div>
           <div
-            className="absolute left-full top-0 bottom-0 bg-brand-yellow w-[100vw]"
+            className="absolute left-full top-0 bottom-0 bg-brand-yellow w-[100vw] z-0"
           ></div>
-          <div className="relative z-10 px-8 flex items-center h-full">
-            <img src="/rolf.webp" alt="ROLF" className="h-8 w-auto object-contain" />
+          <div className="relative z-10 flex items-center h-full">
+            <img
+              src="/rolf.webp"
+              alt="ROLF"
+              className="w-[136px] h-[52px] mt-[14px] object-contain"
+            />
           </div>
         </div>
 

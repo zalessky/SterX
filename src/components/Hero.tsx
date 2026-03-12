@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
+
 const Hero = () => {
   return (
     <section className="relative h-[85vh] min-h-[600px] w-full flex items-center overflow-hidden bg-secondary">
@@ -20,7 +21,7 @@ const Hero = () => {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="max-w-2xl"
+          className="max-w-2xl relative"
         >
           <div className="inline-flex items-center space-x-2 bg-primary/10 border border-primary/20 rounded-full px-3 py-1 mb-6">
             <span className="relative flex h-2 w-2">
@@ -30,8 +31,12 @@ const Hero = () => {
             <span className="text-primary text-[10px] font-black uppercase tracking-widest">Premium Service</span>
           </div>
 
-          <div className="mb-8">
-             <img src="/rolf.webp" alt="ROLF" className="h-24 md:h-32 w-auto object-contain" />
+          <div className="mt-[110px] ml-[0.4px] mb-8">
+             <img
+               src="/rolf.webp"
+               alt="ROLF"
+               className="w-[336.2px] h-[128px] object-contain"
+             />
           </div>
 
           <h1 className="text-5xl md:text-7xl font-museo-900 text-white leading-tight mb-6">
