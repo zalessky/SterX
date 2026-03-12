@@ -4,14 +4,17 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section id="about" className="py-24 bg-white">
-      <div className="container mx-auto px-4">
+    <section id="about" className="py-24 bg-white relative">
+      {/* Top Gradient Transition from Black BrandingShowcase */}
+      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-secondary to-white pointer-events-none"></div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div className="order-2 lg:order-1 relative">
             <div className="absolute -top-10 -left-10 w-40 h-40 bg-primary opacity-20 -z-10 rounded-sm"></div>
             <img
-              src="/images/scheme.webp"
-              alt="Workshop Scheme"
+              src="/images/scheme.svg"
+              alt="Ремонт авто"
               className="rounded-sm shadow-2xl relative z-10 w-full"
             />
             <div className="absolute -bottom-10 -right-10 bg-secondary p-8 text-white z-20 rounded-sm shadow-xl hidden sm:block">
@@ -23,7 +26,7 @@ const About = () => {
           <div className="order-1 lg:order-2">
             <h2 className="text-sm font-museo-900 text-primary mb-6">О компании</h2>
             <h3 className="text-4xl md:text-5xl font-museo-900 text-secondary leading-tight mb-8">
-              Более <span className="text-primary">20 лет</span> заботимся о вашей безопасности
+              Забота о <span className="text-brand-yellow">Вашем</span> автомобиле - наша работа
             </h3>
 
             <div className="space-y-6 text-gray-500 leading-relaxed font-museo-300">
@@ -56,6 +59,9 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      {/* Bottom Gradient Transition to Muted BookingForm */}
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-muted/50 to-white pointer-events-none"></div>
     </section>
   );
 };

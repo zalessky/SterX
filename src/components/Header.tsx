@@ -43,20 +43,20 @@ const Header = () => {
        {/* Logo Right in Yellow Block with Slant */}
         <div className="hidden md:flex h-full relative w-[170px] flex-shrink-0 ml-12">
           {/* Желтый фон: уменьшили наклон (15px) и убрали нахлест на кнопку */}
-          <div 
-            className="absolute inset-y-0 left-0 bg-brand-yellow z-0" 
-            style={{ 
+          <div
+            className="absolute inset-y-0 left-0 bg-brand-yellow z-0"
+            style={{
               clipPath: 'polygon(15px 0, 100% 0, 100% 100%, 0 100%)',
-              right: '-100vw' 
+              right: '-100vw'
             }}
           ></div>
-          
+
           {/* Логотип: теперь он четко позиционирован внутри своего пространства */}
           <div className="relative z-10 w-full flex justify-start pl-10 pt-[14px]">
-            <img 
-              src="/images/rolf.webp" 
-              alt="ROLF" 
-              className="w-[136px] h-[52px] object-contain" 
+            <img
+              src="/images/rolf.webp"
+              alt="ROLF"
+              className="w-[136px] h-[52px] object-contain"
             />
           </div>
         </div>

@@ -84,7 +84,7 @@ const BrandingShowcase = () => {
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
               className="absolute bottom-1/4 -right-10 z-20 bg-primary p-4 shadow-2xl rounded-sm hidden md:block"
             >
-              <div className="text-secondary font-black text-2xl">5W-40</div>
+              <div className="text-secondary font-black text-2xl">0W-20</div>
               <div className="text-secondary/60 text-[10px] uppercase font-bold tracking-tighter">Viscosity</div>
             </motion.div>
           </motion.div>

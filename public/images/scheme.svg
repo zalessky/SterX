@@ -1,0 +1,7 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#1D1D1D"/>
+  <path d="M100 200L1100 200" stroke="#FFCD00" stroke-width="2"/>
+  <path d="M100 600L1100 600" stroke="#FFCD00" stroke-width="2"/>
+  <text x="600" y="400" fill="white" font-family="Arial" font-size="48" text-anchor="middle">PREMIUM CAR SERVICE</text>
+  <path d="M550 450L650 450" stroke="#FFCD00" stroke-width="4"/>
+</svg>

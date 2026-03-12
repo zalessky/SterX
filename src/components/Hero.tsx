@@ -11,7 +11,7 @@ const Hero = () => {
       <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-40 grayscale"
         style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1486006396123-c77547c945f7?q=80&w=2000&auto=format&fit=crop")'
+          backgroundImage: 'url("/images/hero-bg.webp")'
         }}
       ></div>
       <div className="absolute inset-0 z-10 bg-gradient-to-r from-secondary via-secondary/80 to-transparent"></div>

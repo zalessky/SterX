@@ -10,7 +10,7 @@ import {
   Wrench,
   Droplets,
   CircleDashed,
-  Disc
+  ThermometerSnowflake
 } from 'lucide-react';
 
 const services = [
@@ -33,10 +33,10 @@ const services = [
     price: 'от 2 000 ₽',
   },
   {
-    title: 'Шиномонтаж',
-    description: 'Профессиональная замена шин, балансировка и проверка давления.',
-    icon: Disc,
-    price: 'от 1 800 ₽',
+    title: 'Промывка радиаторов',
+    description: 'Очистка системы охлаждения: удаление накипи, отложений и ржавчины. Обеспечивает оптимальный температурный режим двигателя, предотвращая перегрев и продлевая срок его службы.',
+    icon: ThermometerSnowflake,
+    price: 'от 3 500 ₽',
   },
   {
     title: 'Кондиционирование',
@@ -54,8 +54,11 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="py-24 bg-white">
-      <div className="container mx-auto px-4">
+    <section id="services" className="py-24 bg-white relative">
+      {/* Top Gradient Transition from Black Hero */}
+      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-black to-white pointer-events-none"></div>
+
+      <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 space-y-4 md:space-y-0">
           <div className="max-w-xl">
             <h2 className="text-sm font-museo-900 text-primary mb-4">Наши услуги</h2>
@@ -111,6 +114,9 @@ const Services = () => {
           </a>
         </div>
       </div>
+
+      {/* Bottom Gradient Transition to Black BrandingShowcase */}
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-secondary to-white pointer-events-none"></div>
     </section>
   );
 };

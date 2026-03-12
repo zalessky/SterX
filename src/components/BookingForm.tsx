@@ -33,8 +33,8 @@ const BookingForm = () => {
   };
 
   return (
-    <section id="booking" className="py-24 bg-muted/50">
-      <div className="container mx-auto px-4">
+    <section id="booking" className="py-24 bg-muted/50 relative">
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-5xl mx-auto bg-white shadow-2xl overflow-hidden rounded-sm flex flex-col md:flex-row">
           {/* Left Side: Info */}
           <div className="md:w-1/3 bg-secondary p-12 text-white flex flex-col justify-between">
@@ -68,8 +68,8 @@ const BookingForm = () => {
 
             <div className="mt-12 pt-8 border-t border-white/10">
               <p className="text-[10px] text-white/40 uppercase tracking-widest mb-2 font-black">Позвоните нам</p>
-              <a href="tel:+74957858000" className="text-xl font-black text-primary hover:text-white transition-colors">
-                +7 (495) 785-80-00
+              <a href="tel:+79271358899" className="text-xl font-black text-primary hover:text-white transition-colors">
+                +7 (927) 135-88-99
               </a>
             </div>
           </div>
@@ -132,7 +132,7 @@ const BookingForm = () => {
                     className="w-full px-4 py-4 bg-muted border-none focus:ring-2 focus:ring-primary outline-none transition-all rounded-sm text-secondary font-medium appearance-none"
                   >
                     <option>Техническое обслуживание (ТО)</option>
-                    <option>Ремонт двигателя</option>
+                    <option>Промывка радиаторов</option>
                     <option>Диагностика</option>
                     <option>Замена масла</option>
                     <option>Другое</option>
@@ -167,6 +167,9 @@ const BookingForm = () => {
           </div>
         </div>
       </div>
+
+      {/* Bottom Gradient Transition to White Contacts */}
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
     </section>
   );
 };
