@@ -46,7 +46,7 @@ const Header = () => {
           <div 
             className="absolute inset-y-0 left-0 bg-brand-yellow z-0" 
             style={{ 
-              clipPath: 'polygon(20px 0, 100% 0, 100% 100%, 0 100%)',
+              clipPath: 'polygon(15px 0, 100% 0, 100% 100%, 0 100%)',
               right: '-100vw' 
             }}
           ></div>
