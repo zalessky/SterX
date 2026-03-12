@@ -41,23 +41,21 @@ const Header = () => {
         </div>
 
         {/* Logo Right in Yellow Block with Slant */}
-          <div className="hidden md:flex h-full relative z-20">
-            {/* Желтый фон со скосом: жестко привязан к левому краю этого блока */}
-            <div
-              className="absolute inset-y-0 bg-brand-yellow shadow-[-20px_0_20px_rgba(0,0,0,0.2)]"
+          <div className="hidden md:flex h-full relative w-[280px] flex-shrink-0">
+            {/* Желтый фон, который уходит вправо до края экрана */}
+            <div 
+              className="absolute inset-y-0 left-0 bg-brand-yellow z-0" 
               style={{ 
-                left: '-60px', // Глубокий нахлест, чтобы не было щели
-                right: '-100vw', // Уходит в бесконечность вправо
-                clipPath: 'polygon(60px 0, 100% 0, 100% 100%, 0 100%)' 
+                clipPath: 'polygon(40px 0, 100% 0, 100% 100%, 0 100%)',
+                right: '-100vw' 
               }}
             ></div>
-          
-            {/* Контейнер логотипа: ширина зафиксирована, чтобы не было "плавания" */}
-            <div className="relative z-10 flex items-start h-full w-[236px] mr-[100px]">
-              <img
-                src="/images/rolf.webp"
-                alt="ROLF"
-                className="w-[136px] h-[52px] mt-[14px] flex-shrink-0 object-contain"
+            {/* Контейнер для логотипа с жесткими отступами */}
+            <div className="relative z-10 w-full flex justify-end pr-[100px] pt-[14px]">
+              <img 
+                src="/images/rolf.webp" 
+                alt="ROLF" 
+                className="w-[136px] h-[52px] object-contain" 
               />
             </div>
           </div>
