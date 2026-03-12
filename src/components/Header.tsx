@@ -56,7 +56,7 @@ const Header = () => {
             <img 
               src="/images/rolf.webp" 
               alt="ROLF" 
-              className="w-[76px] h-[52px] object-contain" 
+              className="w-[136px] h-[52px] object-contain" 
             />
           </div>
         </div>
