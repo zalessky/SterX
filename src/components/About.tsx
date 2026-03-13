@@ -13,7 +13,7 @@ const About = () => {
           <div className="order-2 lg:order-1 relative">
             <div className="absolute -top-10 -left-10 w-40 h-40 bg-primary opacity-20 -z-10 rounded-sm"></div>
             <img
-              src="/images/scheme.svg"
+              src="/images/service.jpg"
               alt="Ремонт авто"
               className="rounded-sm shadow-2xl relative z-10 w-full"
             />

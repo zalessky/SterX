@@ -1,0 +1,13 @@
+
+> rolf-landing@0.1.0 dev
+> next dev -p 3007
+
+  ▲ Next.js 14.2.13
+  - Local:        http://localhost:3007
+
+ ✓ Starting...
+ ✓ Ready in 5.7s
+ ○ Compiling / ...
+ ✓ Compiled / in 11.6s (1331 modules)
+ GET / 200 in 12410ms
+ GET / 200 in 57ms
