@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description: "Официальный партнер ROLF Oil. Качественное техническое обслуживание и ремонт автомобилей.",
   icons: {
     icon: [
-      { url: '/images/favicons/favicon.png', type: 'image/png' },
+      { url: '/images/favicons/logo__120.svg', type: 'image/svg+xml' },
     ],
     apple: [
       { url: '/images/favicons/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },

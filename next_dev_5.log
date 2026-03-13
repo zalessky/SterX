@@ -12,3 +12,5 @@
  GET / 200 in 12410ms
  GET / 200 in 57ms
  ✓ Compiled in 6.3s (1322 modules)
+ ✓ Compiled in 4.3s (1322 modules)
+ ✓ Compiled in 898ms (1322 modules)
