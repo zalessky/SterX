@@ -1,29 +1,37 @@
 export type Booking = { name: string; phone: string; service: string; comment: string };
 
-// Текст заявки: и для отправки в MAX, и для ручной отправки в мессенджер.
+// Ключ Web3Forms (web3forms.com) для адреса rolf@detalka.info. Ключ не секретный:
+// он только указывает сервису, на какую почту пересылать заявки.
+// Если сервис недоступен, форма предлагает позвонить или написать.
+export const WEB3FORMS_KEY = 'c582e748-6ad4-464b-8855-b94da56f30cb';
+
+// Текст заявки для письма.
 export function buildBookingText(b: Booking): string {
   return [
-    'НОВАЯ ЗАЯВКА с сайта СТО ROLF',
-    '',
-    `👤 Имя: ${b.name.trim()}`,
-    `📞 Телефон: ${b.phone.trim()}`,
-    `🔧 Услуга: ${b.service}`,
-    `💬 Комментарий: ${b.comment.trim() || 'нет'}`,
+    `Имя: ${b.name.trim()}`,
+    `Телефон: ${b.phone.trim()}`,
+    `Услуга: ${b.service}`,
+    `Комментарий: ${b.comment.trim() || 'нет'}`,
   ].join('\n');
 }
 
-// Отправка в MAX. Сайт статический, поэтому заявку пересылает nginx
-// (location /api/booking в deploy/nginx-site.conf): он подставляет токен бота
-// и чат из переменных окружения контейнера. Возвращает false, если отправка
-// не настроена (503), отклонена или сеть недоступна.
-export async function sendBooking(text: string): Promise<boolean> {
+// Отправка заявки на почту через Web3Forms. Возвращает false, если ключ не задан,
+// сервис отказал или сеть недоступна.
+export async function sendBooking(b: Booking): Promise<boolean> {
+  if (!WEB3FORMS_KEY) return false;
   try {
-    const res = await fetch('/api/booking', {
+    const res = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ text }),
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify({
+        access_key: WEB3FORMS_KEY,
+        subject: `Заявка с сайта СТО ROLF: ${b.service}`,
+        from_name: 'Сайт СТО ROLF',
+        message: buildBookingText(b),
+      }),
     });
-    return res.ok;
+    const data = await res.json().catch(() => ({}));
+    return res.ok && data.success === true;
   } catch {
     return false;
   }
