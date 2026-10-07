@@ -6,7 +6,7 @@ import About from '@/components/About';
 import BookingForm from '@/components/BookingForm';
 import Contacts from '@/components/Contacts';
 import Footer from '@/components/Footer';
-import TelegramButton from '@/components/TelegramButton';
+import MessengerButtons from '@/components/MessengerButtons';
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
       <BookingForm />
       <Contacts />
       <Footer />
-      <TelegramButton />
+      <MessengerButtons />
     </main>
   );
 }

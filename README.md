@@ -18,6 +18,10 @@ npm install
 npm run dev
 ```
 
+### MAX
+
+Кнопки MAX и как устроена форма записи — [docs/MAX.md](docs/MAX.md).
+
 ### Ubuntu Deployment Instructions / Инструкции по развертыванию на Ubuntu
 
 #### English

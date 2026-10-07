@@ -2,6 +2,8 @@
 
 import React from 'react';
 import { MapPin, Phone, Clock, MessageCircle } from 'lucide-react';
+import ChatCards from '@/components/ChatCards';
+import { MAX_URL } from '@/lib/messengers';
 
 const Contacts = () => {
   return (
@@ -41,24 +43,17 @@ const Contacts = () => {
               </div>
             </div>
 
-            <div className="p-8 bg-muted rounded-sm flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0">
+            <div className="p-8 bg-muted rounded-sm">
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-secondary">
+                <div className="w-12 h-12 flex-shrink-0 bg-primary rounded-full flex items-center justify-center text-secondary">
                   <MessageCircle size={24} />
                 </div>
                 <div>
                   <p className="text-xs font-bold text-gray-400 uppercase tracking-tighter">Напишите нам</p>
-                  <p className="font-bold">Мы в Telegram</p>
+                  <p className="font-bold">{MAX_URL ? 'Мы в Telegram и MAX' : 'Мы в Telegram'}</p>
                 </div>
               </div>
-              <a
-                href="https://t.me/Rolf64"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-secondary text-white px-8 py-3 rounded-sm font-bold hover:bg-primary hover:text-secondary transition-all"
-              >
-                Чат с мастером
-              </a>
+              <ChatCards className="mt-6 sm:grid-cols-2" />
             </div>
           </div>
 

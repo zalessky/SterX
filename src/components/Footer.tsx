@@ -2,6 +2,9 @@
 
 import React from 'react';
 import Link from 'next/link';
+import { MaxLogo } from '@/components/MessengerIcons';
+import { MAX_URL, TELEGRAM_URL } from '@/lib/messengers';
+
 const Footer = () => {
   return (
     <footer className="bg-secondary pt-20 pb-10 text-white">
@@ -53,8 +56,19 @@ const Footer = () => {
                   <path d="M15.072 2H8.928C3.12 2 2 3.12 2 8.928v6.144C2 20.88 3.12 22 8.928 22h6.144C20.88 22 22 20.88 22 15.072V8.928C22 3.12 20.88 2 15.072 2zm3.336 14.544h-1.632c-.528 0-.696-.408-1.656-1.344-.84-.816-1.224-.912-1.44-.912-.312 0-.408.096-.408.528v1.104c0 .336-.12.624-1.008.624-1.464 0-3.072-.888-4.224-2.52-1.704-2.424-2.184-4.248-2.184-4.584 0-.192.072-.384.456-.384h1.632c.336 0 .456.168.576.504.648 1.872 1.728 3.528 2.16 3.528.168 0 .24-.072.24-.48v-2.136c-.048-.912-.528-1.32-.864-1.32-.144 0-.24.024-.312.048.216-.672.768-.984 1.344-.984h1.272c.456 0 .576.24.576.768v2.688c0 .288.144.384.24.384.168 0 .312-.096.648-.432a9.38 9.38 0 001.368-2.376c.072-.168.192-.264.48-.264h1.632c.48 0 .6.12.6.384 0 .312-.36 1.392-1.656 2.808-.528.576-.648.792-.648 1.056 0 .24.12.48.576.912.864.816 1.152 1.224 1.248 1.584.096.384-.144.576-.576.576z"/>
                 </svg>
               </a>
+              {MAX_URL && (
+                <a
+                  href={MAX_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-white/5 flex items-center justify-center rounded-sm hover:bg-primary hover:text-secondary transition-all group"
+                  title="Мы в MAX"
+                >
+                  <MaxLogo className="w-6 h-6 rounded-md opacity-60 group-hover:opacity-100 transition-opacity" />
+                </a>
+              )}
               <a
-                href="https://t.me/Rolf64"
+                href={TELEGRAM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 bg-white/5 flex items-center justify-center rounded-sm hover:bg-primary hover:text-secondary transition-all group"

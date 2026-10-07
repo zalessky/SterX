@@ -2,10 +2,16 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send, CheckCircle } from 'lucide-react';
+import { Send, CheckCircle, Phone } from 'lucide-react';
+import ChatCards from '@/components/ChatCards';
+import { buildBookingText, sendBooking } from '@/lib/booking';
+import { MAX_URL } from '@/lib/messengers';
+
+type Status = 'idle' | 'sending' | 'sent' | 'fallback';
 
 const BookingForm = () => {
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<Status>('idle');
+  const [website, setWebsite] = useState('');
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -13,18 +19,26 @@ const BookingForm = () => {
     comment: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const message = buildBookingText(formData);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setStatus('sending');
 
-    // Format message for Telegram
-    const message = `🛠 Новая заявка со СТО ROLF:\n\n👤 Имя: ${formData.name}\n📞 Телефон: ${formData.phone}\n🔧 Услуга: ${formData.service}\n💬 Комментарий: ${formData.comment || 'Нет'}`;
-    const encodedMessage = encodeURIComponent(message);
+    // Скрытое поле заполняют только спам-боты — делаем вид, что всё отправлено.
+    if (website) {
+      setStatus('sent');
+      return;
+    }
 
-    // Open Telegram
-    window.open(`https://t.me/Rolf64?text=${encodedMessage}`, '_blank');
+    // Заявка уходит в MAX. Если отправка не настроена или не удалась —
+    // предлагаем позвонить или отправить заявку в мессенджер вручную.
+    setStatus((await sendBooking(message)) ? 'sent' : 'fallback');
+  };
 
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 5000);
+  const resetForm = () => {
+    setStatus('idle');
+    setFormData(prev => ({ ...prev, name: '', phone: '', comment: '' }));
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -76,7 +90,42 @@ const BookingForm = () => {
 
           {/* Right Side: Form */}
           <div className="md:w-2/3 p-12 bg-white relative">
-            {submitted ? (
+            {status === 'fallback' ? (
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                className="h-full flex flex-col items-center justify-center text-center py-12"
+              >
+                <h3 className="text-2xl font-black text-secondary mb-4">Остался один шаг</h3>
+                <p className="text-gray-500 mb-8 max-w-sm">
+                  Отправьте заявку в удобный мессенджер или позвоните нам — текст заявки уже подготовлен.
+                </p>
+                <div className="flex flex-col gap-3 w-full max-w-xs">
+                  <a
+                    href="tel:+79271358899"
+                    className="bg-primary text-secondary py-4 rounded-xl font-black flex items-center justify-center hover:bg-secondary hover:text-white transition-all"
+                  >
+                    <Phone size={18} className="mr-2" />
+                    +7 (927) 135-88-99
+                  </a>
+                  <ChatCards
+                    telegramText={message}
+                    onMaxClick={() => navigator.clipboard?.writeText(message).catch(() => {})}
+                  />
+                </div>
+                {MAX_URL && (
+                  <p className="text-[10px] text-gray-400 mt-4 max-w-xs">
+                    При переходе в MAX текст заявки копируется — просто вставьте его в чат.
+                  </p>
+                )}
+                <button
+                  onClick={() => setStatus('idle')}
+                  className="mt-8 text-secondary font-bold text-sm border-b border-primary hover:text-primary transition-colors"
+                >
+                  Вернуться к форме
+                </button>
+              </motion.div>
+            ) : status === 'sent' ? (
               <motion.div
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -88,7 +137,7 @@ const BookingForm = () => {
                 <h3 className="text-2xl font-black text-secondary mb-4">Спасибо за заявку!</h3>
                 <p className="text-gray-500">Мы свяжемся с вами в ближайшее время.</p>
                 <button
-                  onClick={() => setSubmitted(false)}
+                  onClick={resetForm}
                   className="mt-8 text-secondary font-bold text-sm border-b border-primary hover:text-primary transition-colors"
                 >
                   Отправить еще одну
@@ -96,6 +145,17 @@ const BookingForm = () => {
               </motion.div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
+                {/* Ловушка для спам-ботов: поле скрыто от людей */}
+                <input
+                  type="text"
+                  name="website"
+                  value={website}
+                  onChange={e => setWebsite(e.target.value)}
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                  className="hidden"
+                />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label className="text-[10px] uppercase tracking-widest font-black text-gray-400">Ваше имя</label>
@@ -117,6 +177,8 @@ const BookingForm = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       type="tel"
+                      pattern="(?:\D*\d){10,}\D*"
+                      title="Номер телефона, например +7 927 123-45-67"
                       placeholder="+7 (___) ___-__-__"
                       className="w-full px-4 py-4 bg-muted border-none focus:ring-2 focus:ring-primary outline-none transition-all rounded-sm text-secondary font-medium"
                     />
@@ -153,9 +215,10 @@ const BookingForm = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-primary hover:bg-secondary hover:text-white text-secondary py-5 rounded-sm font-museo-900 text-lg transition-all flex items-center justify-center shadow-lg active:scale-[0.98]"
+                  disabled={status === 'sending'}
+                  className="disabled:opacity-60 disabled:cursor-wait w-full bg-primary hover:bg-secondary hover:text-white text-secondary py-5 rounded-sm font-museo-900 text-lg transition-all flex items-center justify-center shadow-lg active:scale-[0.98]"
                 >
-                  Отправить заявку
+                  {status === 'sending' ? 'Отправляем…' : 'Отправить заявку'}
                   <Send size={18} className="ml-2" />
                 </button>
 
