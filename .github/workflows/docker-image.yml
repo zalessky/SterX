@@ -1,12 +1,13 @@
-# При публикации релиза на GitHub собирает Docker-образ сайта
+# При появлении тега вида v0.7 (в том числе при создании релиза
+# с новым тегом в интерфейсе GitHub) собирает Docker-образ сайта
 # и выкладывает его в ghcr.io/<владелец>/sterx с тегами:
 #   latest  — всегда последний релиз (его подтягивает NAS)
 #   0.7.0   — номер релиза (для отката на конкретную версию)
 name: Docker image
 
 on:
-  release:
-    types: [published]
+  push:
+    tags: ['v*']
   workflow_dispatch:
 
 permissions:
@@ -33,7 +34,7 @@ jobs:
           images: ghcr.io/${{ github.repository_owner }}/sterx
           tags: |
             type=semver,pattern={{version}}
-            type=raw,value=latest,enable=${{ github.event_name == 'release' }}
+            type=raw,value=latest,enable=${{ startsWith(github.ref, 'refs/tags/v') }}
             type=sha,prefix=sha-
 
       - uses: docker/build-push-action@v6
