@@ -1,6 +1,6 @@
 {
   "name": "rolf-landing",
-  "version": "0.1.0",
+  "version": "0.6.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -12,7 +12,6 @@
     "framer-motion": "^11.0.0",
     "lucide-react": "^0.453.0",
     "next": "^14.2.13",
-    "playwright": "^1.58.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -28,6 +27,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.13",
     "jsdom": "^28.1.0",
+    "playwright": "^1.58.2",
     "tailwindcss": "^4",
     "typescript": "^5",
     "vitest": "^4.0.18"

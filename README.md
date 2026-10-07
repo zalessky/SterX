@@ -71,3 +71,31 @@ npm run dev
    pm2 save
    pm2 startup
    ```
+
+## Релизы / Releases
+
+Каждая версия сайта помечается git-тегом (`v0.5`, `v0.6`, …) и публикуется как релиз на GitHub. Список изменений — в [CHANGELOG.md](CHANGELOG.md).
+
+### Развернуть конкретную версию / Deploy a specific version
+
+```bash
+git clone https://github.com/zalessky/SterX.git rolf-landing
+cd rolf-landing
+git checkout v0.6          # или любой другой тег, например v0.5
+npm ci
+npm run build
+pm2 start npm --name "rolf-landing" -- start
+```
+
+### Переключиться на другую версию на уже работающем сервере / Switch version on a running server
+
+```bash
+cd rolf-landing
+git fetch --tags
+git checkout v0.5          # откат на нужную версию
+npm ci
+npm run build
+pm2 restart rolf-landing
+```
+
+Без git можно скачать архив исходников со страницы релиза (Source code .zip / .tar.gz) и выполнить те же команды `npm ci && npm run build`.

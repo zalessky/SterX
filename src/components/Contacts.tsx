@@ -37,7 +37,7 @@ const Contacts = () => {
                   <Clock size={24} />
                   <span className="text-xs font-black uppercase tracking-widest text-secondary">Время работы</span>
                 </div>
-                <p className="text-gray-600 font-medium text-lg italic">Ежедневно<br />с 09:00 до 18:00</p>
+                <p className="text-gray-600 font-medium text-lg italic">Пн–Пт<br />с 09:00 до 18:00</p>
               </div>
             </div>
 

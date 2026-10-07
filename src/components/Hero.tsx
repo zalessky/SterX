@@ -6,7 +6,7 @@ import { ChevronRight } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative h-[85vh] min-h-[600px] w-full flex items-center overflow-hidden bg-secondary">
+    <section className="relative min-h-[85vh] py-16 w-full flex items-center overflow-hidden bg-secondary">
       {/* Background with overlay */}
       <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat opacity-40 grayscale"
@@ -31,15 +31,15 @@ const Hero = () => {
             <span className="text-primary text-[10px] font-black uppercase tracking-widest">Premium Service</span>
           </div>
 
-          <div className="mt-[110px] ml-[0.4px] mb-8">
+          <div className="mt-8 ml-[0.4px] mb-8">
              <img
-               src="/images/rolf.webp"
+               src="/images/rolf-hero.webp"
                alt="ROLF"
                className="w-[336.2px] h-[128px] object-contain"
              />
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-museo-900 text-white leading-tight mb-6">
+          <h1 className="text-[28px] sm:text-5xl xl:text-6xl font-museo-900 text-white leading-tight mb-6">
             ПРОФЕССИОНАЛЬНЫЙ <br />
             <span className="text-primary">АВТОСЕРВИС</span>
           </h1>

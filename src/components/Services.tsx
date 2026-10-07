@@ -42,7 +42,7 @@ const services = [
     title: 'Кондиционирование',
     description: 'Обслуживание и заправка систем кондиционирования автомобиля.',
     icon: Wind,
-    price: 'от 1 200 ₽',
+    price: 'от 3 500 ₽',
   },
   {
     title: 'Диагностика двигателя',
@@ -62,7 +62,7 @@ const Services = () => {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 space-y-4 md:space-y-0">
           <div className="max-w-xl">
             <h2 className="text-sm font-museo-900 text-primary mb-4">Наши услуги</h2>
-            <p className="text-4xl md:text-5xl font-museo-900 text-secondary leading-tight">
+            <p className="text-[28px] sm:text-4xl md:text-5xl font-museo-900 text-secondary leading-tight">
               Профессиональный уход за вашим <span className="text-primary underline decoration-4 underline-offset-8">автомобилем</span>
             </p>
           </div>
