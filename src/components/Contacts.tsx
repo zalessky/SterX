@@ -17,7 +17,7 @@ const Contacts = () => {
               Ждем вас в <span className="text-primary italic">нашем</span> сервисе
             </h3>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12 md:mb-0">
               <div className="space-y-4">
                 <div className="flex items-center space-x-3 text-primary">
                   <MapPin size={24} />
@@ -26,12 +26,18 @@ const Contacts = () => {
                 <p className="text-gray-600 font-medium text-lg">г. Энгельс,<br />Проспект Химиков, 33В</p>
               </div>
 
-              <div className="space-y-4">
+              {/* Телефон; на широком экране под ним кнопки мессенджеров (занимает две строки) */}
+              <div className="space-y-4 md:row-span-2">
                 <div className="flex items-center space-x-3 text-primary">
                   <Phone size={24} />
                   <span className="text-xs font-black uppercase tracking-widest text-secondary">Телефон</span>
                 </div>
-                <p className="text-gray-600 font-bold text-lg">+7 (927) 135-88-99</p>
+                <a href="tel:+79271358899" className="block text-gray-600 font-bold text-lg hover:text-primary transition-colors">
+                  +7 (927) 135-88-99
+                </a>
+                <div className="hidden md:block pt-2">
+                  <ChatCards />
+                </div>
               </div>
 
               <div className="space-y-4">
@@ -43,7 +49,8 @@ const Contacts = () => {
               </div>
             </div>
 
-            <div className="p-8 bg-muted rounded-sm">
+            {/* На телефоне кнопки мессенджеров — отдельным блоком под контактами */}
+            <div className="md:hidden p-8 bg-muted rounded-sm">
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 flex-shrink-0 bg-primary rounded-full flex items-center justify-center text-secondary">
                   <MessageCircle size={24} />
@@ -53,7 +60,7 @@ const Contacts = () => {
                   <p className="font-bold">{MAX_URL ? 'Мы в Telegram и MAX' : 'Мы в Telegram'}</p>
                 </div>
               </div>
-              <ChatCards className="mt-6 sm:grid-cols-2" />
+              <ChatCards className="mt-6" />
             </div>
           </div>
 
