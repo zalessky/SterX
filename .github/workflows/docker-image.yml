@@ -1,0 +1,45 @@
+# При публикации релиза на GitHub собирает Docker-образ сайта
+# и выкладывает его в ghcr.io/<владелец>/sterx с тегами:
+#   latest  — всегда последний релиз (его подтягивает NAS)
+#   0.7.0   — номер релиза (для отката на конкретную версию)
+name: Docker image
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: docker/setup-buildx-action@v3
+
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ghcr.io/${{ github.repository_owner }}/sterx
+          tags: |
+            type=semver,pattern={{version}}
+            type=raw,value=latest,enable=${{ github.event_name == 'release' }}
+            type=sha,prefix=sha-
+
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          platforms: linux/amd64,linux/arm64
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
